@@ -8,3 +8,15 @@ All governance and operational decisions, ordered by date.
 | DEC-20260223-002 | [Adopt GitHub Decision Tracking Policy](decisions/2026/DEC-20260223-github-decision-tracking-policy.md) | Approved | 2026-02-23 | Ed (Steward) |
 | DEC-20260223-003 | [Organize Policies into Domain Subdirectories](decisions/2026/DEC-20260223-policy-directory-structure.md) | Approved | 2026-02-23 | Ed (Steward) |
 | DEC-20260223-004 | [Adopt Google Drive Knowledge Organization Policy](decisions/2026/DEC-20260223-google-drive-knowledge-organization.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-005 | [Adopt Meeting Capture Policy](decisions/2026/DEC-20260223-meeting-capture.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-006 | [Adopt Shared Calendars and Meeting Scheduling Policy](decisions/2026/DEC-20260223-shared-calendars.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-007 | [Adopt Contributor Calendar Usage and Hour Tracking Policy](decisions/2026/DEC-20260223-contributor-calendar-hour-tracking.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-008 | [Adopt Secure Mattermost Access Policy for Executive Council](decisions/2026/DEC-20260223-mattermost-access.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-009 | [Adopt Agent Authority Matrix Policy](decisions/2026/DEC-20260223-agent-authority-matrix.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-010 | [Document Home Network and OpenClaw Placement Architecture](decisions/2026/DEC-20260223-home-network-openclaw-placement.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-011 | [Adopt Knowledge Staging Pipeline Workflow](decisions/2026/DEC-20260223-knowledge-staging-pipeline.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-012 | [Adopt Test Document Ingestion and Source Library Workflow](decisions/2026/DEC-20260223-ingestion-test-source-library.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-013 | [Adopt Tooling Cost Centers and Build-vs-Buy Framework](decisions/2026/DEC-20260223-tooling-cost-centers.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-014 | [Adopt Governance Repository Purpose and Operating Model](decisions/2026/DEC-20260223-governance-repo-readme.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-015 | [Adopt Local Machine Onboarding Guide](decisions/2026/DEC-20260223-onboarding-local-machine.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260223-016 | [Adopt Notion Export Ingestion and CRUD Authority Workflow](decisions/2026/DEC-20260223-notion-export-ingestion.md) | Approved | 2026-02-23 | Ed (Steward) |
