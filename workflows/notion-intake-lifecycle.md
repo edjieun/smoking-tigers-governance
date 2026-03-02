@@ -9,26 +9,34 @@
 
 ## Objective
 
-Ed exports the Notion teamspace as a zip to the Smoking Tigers Google Drive folder.
-OpenClaw ingests that export, processes it into structured knowledge, updates its memory,
-and checks each project against activation eligibility criteria.
+OpenClaw ingests Notion knowledge for specific projects, processes it into structured knowledge,
+updates its RAG memory, and checks each project against activation eligibility criteria.
 
-**Google Drive constraint:** Drive is too large to store locally. It stays in the cloud.
-OpenClaw manages knowledge via memory files and indexed artifacts — not local Drive mirrors.
+**Constraints:**
+- Full Notion teamspace export is too large — full-zip exports are NOT the intake method
+- Google Drive is too large to store locally — stays in cloud
+- Intake is scoped per project — Ed manually exports or pastes knowledge for one project at a time
+- OpenClaw manages knowledge via memory files and indexed artifacts — not local Drive mirrors
+
+**Revised intake model:** Project-scoped, not teamspace-scoped.
 
 ---
 
 ## Intake Lifecycle Model
 
 ```
-EXPORT (Ed)
-  → Google Drive: Smoking Tigers / Notion Exports / incoming/
-      → Ed signals Scout via Mattermost: "Notion export ready — [date]"
+HANDOFF (Ed — choose one method per project)
+  Option A — Paste: Ed pastes Notion page content directly into #knowledge or #executive
+  Option B — File drop: Ed exports a single project's pages as markdown/zip to ~/Desktop/intake/
+  Option C — Drive (targeted): Ed shares a specific file/folder link; knowledge-ops fetches only that
+
+  → Ed signals Scout: "TLN knowledge ready" / "pasting [project] content now"
+  → Full teamspace export is NOT used — too large, too slow
 
 PICKUP (Scout / knowledge-ops)
-  → Scout triggers knowledge-ops with export path
-  → knowledge-ops downloads zip from Drive to ~/Desktop/intake/
-  → Extracts to notion-exports/extracted/[BATCH-ID]/
+  → Scout receives paste or detects file in ~/Desktop/intake/
+  → If paste: Scout saves to ~/Desktop/intake/[BATCH-ID].md
+  → knowledge-ops picks up from intake dir
 
 CLASSIFY (knowledge-ops)
   → Parse all pages/databases
@@ -60,11 +68,12 @@ ARCHIVE
 
 | Trigger | Action |
 |---------|--------|
-| Ed posts "Notion export ready — [date]" in #executive or #knowledge | Scout kicks off intake via knowledge-ops |
-| File appears in ~/Desktop/intake/ matching `notion-export*.zip` | knowledge-ops HEARTBEAT picks it up |
+| Ed pastes project content in #executive or #knowledge | Scout saves to intake dir, triggers knowledge-ops |
+| Ed drops a file in ~/Desktop/intake/ | knowledge-ops HEARTBEAT picks it up automatically |
+| Ed signals "ready" with project name | Scout confirms receipt and kicks off processing |
 | Manual Scout command in #executive | Scout spawns knowledge-ops with explicit path |
 
-**Note:** No silent automation. Every intake cycle is Ed-initiated.
+**No full teamspace exports.** Every intake cycle is project-scoped and Ed-initiated.
 
 ---
 
@@ -200,11 +209,12 @@ Recommended next steps:
 
 ## Open Items (as of 2026-03-02)
 
-- [ ] Ed's message cut off at "RP/cash structure" — confirm no additional constraints beyond what's captured here
-- [ ] Drive folder path for export drops not yet confirmed — Ed to specify exact Drive folder name/path
-- [ ] Download mechanism for Drive → local intake not yet built (manual for now; automation TBD)
-- [ ] ste-index.md (Drive index) not yet built
+- [ ] Ed's 15:34 message cut off at "RP/cash structure" — confirm no additional activation constraints
+- [ ] Full teamspace export approach retired — project-scoped paste/file-drop model adopted instead
+- [ ] Trade Like Nick is first project to move fully into OpenClaw — knowledge paste incoming from Ed
+- [ ] ste-index.md (Drive index) not yet built — lower priority now that full export is off the table
 - [ ] EA Notion Finance DB setup not yet complete (RP ledger, income tracking, RP→cash)
+- [ ] Drive targeted-fetch mechanism (Option C) not yet built — manual for now
 
 ---
 
