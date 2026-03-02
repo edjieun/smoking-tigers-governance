@@ -20,3 +20,4 @@ All governance and operational decisions, ordered by date.
 | DEC-20260223-014 | [Adopt Governance Repository Purpose and Operating Model](decisions/2026/DEC-20260223-governance-repo-readme.md) | Approved | 2026-02-23 | Ed (Steward) |
 | DEC-20260223-015 | [Adopt Local Machine Onboarding Guide](decisions/2026/DEC-20260223-onboarding-local-machine.md) | Approved | 2026-02-23 | Ed (Steward) |
 | DEC-20260223-016 | [Adopt Notion Export Ingestion and CRUD Authority Workflow](decisions/2026/DEC-20260223-notion-export-ingestion.md) | Approved | 2026-02-23 | Ed (Steward) |
+| DEC-20260302-001 | [Fix & Upgrade Notion Intake System — Adopt Intake Lifecycle Workflow](decisions/2026/DEC-20260302-notion-intake-lifecycle.md) | Draft | 2026-03-02 | Ed (Steward) |
