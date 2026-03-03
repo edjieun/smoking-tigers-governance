@@ -8,7 +8,7 @@
 | Field | Details |
 |-------|---------|
 | **Invoice #** | STM-2026-001 |
-| **Date** | 2026-03-02 *(confirm exact transaction date)* |
+| **Date** | 2026-03-01 |
 | **From** | Quorum1 LLC d/b/a Smoking Tigers Media Group |
 | **To** | Nick Pham |
 | **Project** | Trade Like Nick (TLN) |
@@ -20,7 +20,7 @@
 
 | Description | Qty | Unit Price | Total |
 |-------------|-----|-----------|-------|
-| Rev Points — Initial Purchase (50,000 RP @ $0.20/RP) | 50,000 RP | $0.20 | $2,500.00 |
+| Rev Points — Initial Purchase (12,500 RP @ $0.20/RP) | 12,500 RP | $0.20 | $2,500.00 |
 
 ---
 
@@ -43,10 +43,10 @@
 
 | Field | Value |
 |-------|-------|
-| Rev Points Issued | 50,000 RP |
+| Rev Points Issued | 12,500 RP |
 | Face Value per RP | $1.00 (standard Q1 face value) |
 | Purchase Price per RP | $0.20 (20 cents on the dollar) |
-| Total Face Value | $50,000.00 |
+| Total Face Value | $12,500.00 |
 | Total Paid | $2,500.00 |
 | Discount | 80% off face value |
 | RP Ledger Entry | RPL-2026-001 |
@@ -63,7 +63,7 @@ These Rev Points are issued under the Q1 Governance Framework maintained by Quor
 
 ## Notes
 
-- A second tranche of $2,500 (50,000 RP, same rate) is planned for approximately one month from the date above, subject to mutual agreement.
+- A second tranche of $2,500 (12,500 RP, same rate) is planned for approximately one month from the date above, subject to mutual agreement.
 - No multiplier is mandated by STM for this project. Contributors accepting RP from the TLN pool negotiate their own terms (market rate, custom multiplier, or cash).
 
 ---

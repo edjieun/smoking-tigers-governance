@@ -30,12 +30,12 @@ Nick is currently at **Milestone 1**: establishing a repeatable recording setup 
 |---|---|
 | Purchaser | Nick Pham |
 | Purchase Amount | $2,500 USD |
-| Rev Points Issued | 50,000 RP |
+| Rev Points Issued | 12,500 RP |
 | Face Value per RP | $1.00 (standard Q1 face value) |
 | Sale Price per RP | $0.20 (Nick buys at $0.20 on the dollar — discount from face) |
-| Total RP face value | $50,000 |
+| Total RP face value | $12,500 |
 | Discount | 80% off face value |
-| Date | 2026-03-02 (confirm exact transaction date) |
+| Date | 2026-03-01 |
 | Status | Executed — invoice to be issued |
 | Possible 2nd payment | $2,500 additional (~1 month later, same rate) |
 
@@ -95,7 +95,7 @@ Recovery mechanics follow standard Q1 governance once defined.
 
 ## Open Items
 
-- [ ] Issue invoice to Nick for $2,500 / 50,000 RP transaction ← **immediate**
+- [ ] Issue invoice to Nick for $2,500 / 12,500 RP transaction ← **immediate**
 - [ ] Confirm exact transaction date with Nick (for invoice and RTPA)
 - [ ] Update RTPA with confirmed terms (Nick Pham, $0.20/RP, no forced multiplier)
 - [ ] Define recovery pool % and cap

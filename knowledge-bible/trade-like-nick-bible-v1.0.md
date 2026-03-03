@@ -27,10 +27,10 @@ Trade Like Nick (TLN) is a creator-led options education channel and product bus
 
 ### 2.1 RevPoints Purchase
 
-- Nick paid **$2,500 USD** → receives **50,000 RevPoints**
+- Nick paid **$2,500 USD** → receives **12,500 RevPoints**
 - RP face value: **$1.00/RP** (standard Q1)
 - Sale price: **$0.20/RP** (Nick buys at 20 cents on the dollar)
-- Total face value of RP issued: **$50,000**
+- Total face value of RP issued: **$12,500**
 - Possible second payment: **$2,500 ~1 month later** at same rate
 - No forced multiplier — contributors negotiate their own terms
 
@@ -129,7 +129,7 @@ STM provides: brand strategy + production + post + asset management + publishing
 
 ## 11) Immediate Action Items (from Mar 1 Exec Meeting)
 
-1. Issue invoice to Nick — record of $2,500 / 50,000 RP transaction ← **today**
+1. Issue invoice to Nick — record of $2,500 / 12,500 RP transaction ← **today**
 2. Update Nick contract: $0.20/RP; $2.5k now + $2.5k in 1 month; multiplier policy
 3. Schedule first Riverside session (Nick + Ed + Basil)
 4. Lock repeatable set (home/classroom)
