@@ -17,7 +17,7 @@
      - Option B: 2,500 RP at $1.00/RP = $2,500 (and RP count is 2,500, not 50,000)
    - **Do not execute until confirmed.**
 
-2. **Purchaser Full Legal Name:** Nick [LAST NAME TBD] — confirm before execution.
+2. **Purchaser Full Legal Name:** Nick Pham — confirm before execution.
 
 3. **Agreement Date:** Placeholder 2026-03-02 — confirm actual transaction date with Ed.
 
@@ -33,11 +33,11 @@
 | **Status** | DRAFT — NOT EXECUTED |
 | **Agreement Date** | 2026-03-02 *(placeholder — confirm with Ed)* |
 | **Issuer** | Quorum1 LLC d/b/a Smoking Tigers Media Group |
-| **Purchaser** | Nick [LAST NAME TBD] |
+| **Purchaser** | Nick Pham |
 | **Project** | Trade Like Nick |
 | **Purchase Amount** | $2,500 USD |
-| **Rev Points Issued** | 50,000 RP *(see pricing discrepancy flag above)* |
-| **Face Value per RP** | $0.05 *(implied — FLAGGED FOR REVIEW)* |
+| **Rev Points Issued** | 12,500 RP |
+| **Sale Price per RP** | $0.20 (20% of $1.00 face value) |
 | **Governing Framework** | Q1 Governance Framework (Quorum1 LLC) |
 | **Governing Entity** | Quorum1 LLC d/b/a Smoking Tigers Media Group |
 
@@ -52,18 +52,18 @@ Quorum1 LLC d/b/a Smoking Tigers Media Group
 ("Issuer" or "Company")
 
 **Purchaser:**
-Nick [LAST NAME TBD]
+Nick Pham
 ("Purchaser")
 
 ---
 
 ### 1. Purchase of Rev Points
 
-1.1 **Rev Points Issued.** Subject to the terms and conditions of this Agreement and the Q1 Governance Framework, the Issuer hereby agrees to issue to Purchaser **50,000 Rev Points (RP)** in the Smoking Tigers Media Group investment ledger (the "Ledger") upon receipt of the Purchase Amount.
+1.1 **Rev Points Issued.** Subject to the terms and conditions of this Agreement and the Q1 Governance Framework, the Issuer hereby agrees to issue to Purchaser **12,500 Rev Points (RP)** in the Smoking Tigers Media Group investment ledger (the "Ledger") upon receipt of the Purchase Amount.
 
 1.2 **Purchase Amount.** Purchaser agrees to pay, and Issuer acknowledges receipt of, **$2,500 USD** (the "Purchase Amount") as consideration for the Rev Points issued hereunder.
 
-1.3 **Implied Face Value.** ⚠️ *[FLAGGED — STEWARD REVIEW REQUIRED]* The implied face value based on this transaction is **$0.05 per RP**. Standard Q1 face value is $1.00 per RP. Steward must confirm whether this represents: (a) special bulk pricing, (b) a different RP count, or (c) another agreed-upon structure. This section will be finalized upon Steward confirmation.
+1.3 **Sale Price and Face Value.** Rev Points are issued at a sale price of **$0.20 per RP** (20% of face value). The face value of each Rev Point remains **$1.00** for recovery and ledger purposes. Nick purchases at a discounted rate providing additional runway to use Rev Points in lieu of cash for production services. The $2,500 purchase price yields 12,500 RP at $0.20/RP.
 
 ---
 
@@ -152,7 +152,7 @@ Date: ___________________________
 **PURCHASER:**
 
 By: ___________________________
-Name: Nick [LAST NAME TBD]
+Name: Nick Pham
 Date: ___________________________
 
 ---
