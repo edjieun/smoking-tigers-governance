@@ -1,68 +1,115 @@
-# Project Profile — Trade Like Nick
+# Project Profile — Trade Like Nick (TLN)
 
-Status: DRAFT — PENDING STEWARD REVIEW
-Owner: Ed (Steward)
-Created: 2026-03-02
-Last Updated: 2026-03-02
+**Status:** Active — intake phase (Milestone 1)
+**Owner:** Ed (Steward)
+**Created:** 2026-03-02
+**Last Updated:** 2026-03-02
 
 ---
 
 ## Overview
 
 **Project Name:** Trade Like Nick
-**Creator/Partner:** Nick (full legal name TBD)
+**Creator/Partner:** Nick Pham
 **Classification:** STM Client / Partner Project
-**Stage:** Active — Rev Token Purchase executed
+**Stage:** Active — Rev Token Purchase Agreement executed; Milestone 1 in progress
 
 ---
 
 ## Description
 
-[DRAFT — to be filled in by Ed or EA after review]
+Trade Like Nick (TLN) is a creator-led options education channel and product business built with Smoking Tigers Media. Nick's positioning: "Bill Nye meets Options Trading" — a trusted teacher persona delivering a simple, repeatable options-selling system ("be the casino") to a low-capital audience ($3k–$5k starting capital).
 
-Trade Like Nick is a partner project under the Smoking Tigers Media Group umbrella.
-Nick has executed a Rev Token Purchase Agreement, providing initial capital in exchange for Rev Points.
+Nick is currently at **Milestone 1**: establishing a repeatable recording setup and shipping first videos. STM's role is to provide brand, production, and distribution systems so Nick can "show up and record."
 
 ---
 
-## Rev Token Purchase — Initial Transaction
+## RevPoints Purchase — Confirmed Transaction
 
 | Field | Value |
 |---|---|
-| Purchaser | Nick |
+| Purchaser | Nick Pham |
 | Purchase Amount | $2,500 USD |
 | Rev Points Issued | 50,000 RP |
-| Face Value per RP | $0.05 (implied: $2,500 / 50,000 RP) |
-| Date | TBD — confirm with Ed |
-| Agreement | Rev Token Purchase Agreement (RTPA) — document TBD |
-| Status | PENDING — needs formal RTPA document |
+| Face Value per RP | $1.00 (standard Q1 face value) |
+| Sale Price per RP | $0.20 (Nick buys at $0.20 on the dollar — discount from face) |
+| Total RP face value | $50,000 |
+| Discount | 80% off face value |
+| Date | 2026-03-02 (confirm exact transaction date) |
+| Status | Executed — invoice to be issued |
+| Possible 2nd payment | $2,500 additional (~1 month later, same rate) |
 
-> ⚠️ Note: Standard Q1 face value is $1 per RP. This transaction implies $0.05/RP or 50,000 RP at a bulk rate. Steward should confirm intended face value and RP pricing rationale before recording as final.
+**Model explanation:** RP face value is $1/RP (standard Q1). Nick purchases the right to use them at $0.20/RP — a discounted rate giving him additional runway to pay for production services in lieu of cash.
+
+---
+
+## RevPoints Multiplier Policy
+
+**No forced multiplier for TLN.** Contributors accepting Nick's RP choose their own terms:
+- Market rate (no multiplier — RP redeemed at $1 face)
+- Any agreed multiplier to compensate for deferral/risk
+- Cash alternative if mutually agreed
+
+Steward does not mandate RPM for this project. Contributors negotiate directly.
+
+---
+
+## Recovery Pool
+
+Recovery pool % and cap: **TBD — Steward to define.**
+Recovery mechanics follow standard Q1 governance once defined.
+
+---
+
+## Current Milestone
+
+**Milestone 1 — Ship the Engine**
+- [ ] Lock repeatable recording setup (home/classroom set, audio, lighting)
+- [ ] Establish weekly recording cadence
+- [ ] Define Semester 1 syllabus (first 6 classes)
+- [ ] Ship first videos
+- [ ] Stand up production pipeline: intake → edit → publish → track
+
+---
+
+## Team (Active)
+
+| Person | Role |
+|--------|------|
+| Nick Pham | Creator — TLN |
+| Ed Hwang | Steward — operating system, governance, contract, automation |
+| Basil Childers | Brand/creative direction, early production support |
+| Robert | Editing / post-production |
+
+---
+
+## Content & Brand
+
+- **Positioning:** "Bill Nye meets Options Trading" — trusted teacher, education-first
+- **Target audience:** 18–30, $3k–$5k starting capital, wants simple systems not hype
+- **Core concept:** Selling options = being the casino (probability-first, not speculation)
+- **Distribution:** TLN YouTube (primary), downstream IG/shorts via scheduler (future)
+- **Compliance:** Education-framed only; disclaimers baked into production checklist
 
 ---
 
 ## Open Items
 
-- [ ] Confirm Nick's full legal name and contact details
-- [ ] Confirm RP face value / pricing structure (standard $1/RP vs. bulk rate)
-- [ ] Draft and execute formal Rev Token Purchase Agreement (RTPA)
-- [ ] Set RPM (Rev Point Multiplier) for this project
-- [ ] Define project scope, deliverables, milestones
-- [ ] Assign project to governance assembly when ready
-- [ ] Set up Notion project page (EA task)
+- [ ] Issue invoice to Nick for $2,500 / 50,000 RP transaction ← **immediate**
+- [ ] Confirm exact transaction date with Nick (for invoice and RTPA)
+- [ ] Update RTPA with confirmed terms (Nick Pham, $0.20/RP, no forced multiplier)
+- [ ] Define recovery pool % and cap
+- [ ] Schedule first Riverside session (Nick + Ed + Basil)
+- [ ] Lock Semester 1 syllabus
+- [ ] Assess second $2,500 payment (~1 month out)
 - [ ] Add to Rev Point Ledger (finance:revpoint-ledger)
+- [ ] Notion project page (EA — blocked on Notion API)
 
 ---
 
 ## Related Records
 
-- Rev Point Ledger: Notion → Finance DB (TBD — in setup)
-- RTPA Document: agreements/ (TBD)
-- Governance decision: TBD
-
----
-
-## Notes
-
-> All entries in this file are DRAFT until Steward review.
-> No RTPA is considered executed until formal document is signed.
+- RTPA Draft: `agreements/DRAFT_2026-03-02_RTPA_trade-like-nick.md`
+- Invoice: `agreements/INVOICE_2026-03-02_TLN_Nick-Pham.md`
+- Project Bible: `knowledge-bible/trade-like-nick-bible-v1.0.md`
+- Rev Point Ledger Entry: RPL-2026-001 (local draft, Notion pending)
