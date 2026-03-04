@@ -21,3 +21,9 @@ All governance and operational decisions, ordered by date.
 | DEC-20260223-015 | [Adopt Local Machine Onboarding Guide](decisions/2026/DEC-20260223-onboarding-local-machine.md) | Approved | 2026-02-23 | Ed (Steward) |
 | DEC-20260223-016 | [Adopt Notion Export Ingestion and CRUD Authority Workflow](decisions/2026/DEC-20260223-notion-export-ingestion.md) | Approved | 2026-02-23 | Ed (Steward) |
 | DEC-20260302-001 | [Fix & Upgrade Notion Intake System — Adopt Intake Lifecycle Workflow](decisions/2026/DEC-20260302-notion-intake-lifecycle.md) | Draft | 2026-03-02 | Ed (Steward) |
+| DEC-20260303-001 | [Cal.com Adopted as Scheduling Platform](decisions/2026/DEC-20260303-001-calcom-scheduling-platform.md) | Proposed | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-002 | [Mattermost and Cal.com to Bind to Tailscale IP Only](decisions/2026/DEC-20260303-002-tailscale-only-binding.md) | Proposed | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-003 | [Notion API Integration Adopted for STM Teamspace](decisions/2026/DEC-20260303-003-notion-api-integration.md) | Proposed | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-004 | [STAI Intake Folder Established in iCloud](decisions/2026/DEC-20260303-004-stai-intake-folder.md) | Proposed | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-005 | [EA Pipeline Defined (Intake, Templates, Naming, Routing)](decisions/2026/DEC-20260303-005-ea-pipeline-definition.md) | Proposed | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-006 | [Memory Pipeline Architecture Adopted](decisions/2026/DEC-20260303-006-memory-pipeline-architecture.md) | Proposed | 2026-03-03 | Ed (Steward) |
