@@ -21,9 +21,15 @@ All governance and operational decisions, ordered by date.
 | DEC-20260223-015 | [Adopt Local Machine Onboarding Guide](decisions/2026/DEC-20260223-onboarding-local-machine.md) | Approved | 2026-02-23 | Ed (Steward) |
 | DEC-20260223-016 | [Adopt Notion Export Ingestion and CRUD Authority Workflow](decisions/2026/DEC-20260223-notion-export-ingestion.md) | Approved | 2026-02-23 | Ed (Steward) |
 | DEC-20260302-001 | [Fix & Upgrade Notion Intake System — Adopt Intake Lifecycle Workflow](decisions/2026/DEC-20260302-notion-intake-lifecycle.md) | Draft | 2026-03-02 | Ed (Steward) |
-| DEC-20260303-001 | [Cal.com Adopted as Scheduling Platform](decisions/2026/DEC-20260303-001-calcom-scheduling-platform.md) | Proposed | 2026-03-03 | Ed (Steward) |
-| DEC-20260303-002 | [Mattermost and Cal.com to Bind to Tailscale IP Only](decisions/2026/DEC-20260303-002-tailscale-only-binding.md) | Proposed | 2026-03-03 | Ed (Steward) |
-| DEC-20260303-003 | [Notion API Integration Adopted for STM Teamspace](decisions/2026/DEC-20260303-003-notion-api-integration.md) | Proposed | 2026-03-03 | Ed (Steward) |
-| DEC-20260303-004 | [STAI Intake Folder Established in iCloud](decisions/2026/DEC-20260303-004-stai-intake-folder.md) | Proposed | 2026-03-03 | Ed (Steward) |
-| DEC-20260303-005 | [EA Pipeline Defined (Intake, Templates, Naming, Routing)](decisions/2026/DEC-20260303-005-ea-pipeline-definition.md) | Proposed | 2026-03-03 | Ed (Steward) |
-| DEC-20260303-006 | [Memory Pipeline Architecture Adopted](decisions/2026/DEC-20260303-006-memory-pipeline-architecture.md) | Proposed | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-001 | [Cal.com Adopted as Scheduling Platform](decisions/2026/DEC-20260303-001-calcom-scheduling-platform.md) | Approved | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-002 | [Restrict Mattermost and Cal.com Access to Tailscale Network Only](decisions/2026/DEC-20260303-002-tailscale-only-binding.md) | Approved | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-003 | [Notion API Integration Adopted for STM Teamspace](decisions/2026/DEC-20260303-003-notion-api-integration.md) | Approved | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-004 | [STAI Intake Folder Established in iCloud](decisions/2026/DEC-20260303-004-stai-intake-folder.md) | Approved | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-005 | [EA Pipeline Defined (Intake, Templates, Naming, Routing)](decisions/2026/DEC-20260303-005-ea-pipeline-definition.md) | Approved | 2026-03-03 | Ed (Steward) |
+| DEC-20260303-006 | [Memory Pipeline Architecture Adopted](decisions/2026/DEC-20260303-006-memory-pipeline-architecture.md) | Approved | 2026-03-03 | Ed (Steward) |
+| DEC-20260314-001 | [Multi-Channel Comms: Telegram First, WhatsApp Deprioritized](decisions/2026/DEC-20260314-001-multi-channel-comms-priority.md) | Approved | 2026-03-14 | Ed (Steward) |
+| DEC-20260314-002 | [External Community Channels: Inbound-Only Agent Access](decisions/2026/DEC-20260314-002-external-channels-inbound-only.md) | Approved | 2026-03-14 | Ed (Steward) |
+| DEC-20260314-003 | [Smoking Tigers Landing Page: Ownership, Hosting, and Stripe Dependency](decisions/2026/DEC-20260314-003-landing-page-ownership-hosting.md) | Approved | 2026-03-14 | Ed (Steward) |
+| DEC-20260314-004 | [Revenue Points Purchases via TOS Click-Through](decisions/2026/DEC-20260314-004-rev-points-tos-clickthrough.md) | Approved | 2026-03-14 | Ed (Steward) |
+| DEC-20260315-001 | [Frank Anzures Onboarding as Time Investor](decisions/2026/DEC-20260315-001-frank-anzures-time-investor.md) | Approved | 2026-03-15 | Ed (Steward) |
+| DEC-20260315-002 | [Q1 Creative Guild: Gaming Chapter Launch (Zeb)](decisions/2026/DEC-20260315-002-q1-creative-guild-gaming.md) | Approved | 2026-03-15 | Ed (Steward) |

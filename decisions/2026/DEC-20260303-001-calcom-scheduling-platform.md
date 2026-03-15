@@ -2,7 +2,7 @@
 
 **Decision ID:** DEC-20260303-001
 **Title:** Cal.com Adopted as Scheduling Platform
-**Status:** Proposed
+**Status:** Approved
 **Date:** 2026-03-03
 **Owner / Approver:** Ed (Steward)
 
@@ -51,3 +51,4 @@ Cal.com is the official scheduling platform for Smoking Tigers Media. It runs lo
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-03-03 | Initial draft | Governance Ops |
+| 2026-03-04 | Approved by Ed (Steward) | Ed |

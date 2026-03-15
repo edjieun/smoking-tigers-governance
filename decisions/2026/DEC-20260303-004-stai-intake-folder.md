@@ -2,7 +2,7 @@
 
 **Decision ID:** DEC-20260303-004
 **Title:** STAI Intake Folder Established in iCloud
-**Status:** Proposed
+**Status:** Approved
 **Date:** 2026-03-03
 **Owner / Approver:** Ed (Steward)
 
@@ -51,3 +51,4 @@ The iCloud Drive folder previously named "Intake Directory" was renamed to "STAI
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-03-03 | Initial draft | Governance Ops |
+| 2026-03-04 | Approved by Ed (Steward) | Ed |

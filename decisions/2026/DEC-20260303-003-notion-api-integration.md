@@ -2,7 +2,7 @@
 
 **Decision ID:** DEC-20260303-003
 **Title:** Notion API Integration Adopted for STM Teamspace
-**Status:** Proposed
+**Status:** Approved
 **Date:** 2026-03-03
 **Owner / Approver:** Ed (Steward)
 
@@ -54,3 +54,4 @@ The Notion API is the official integration method for agent access to the STM No
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-03-03 | Initial draft | Governance Ops |
+| 2026-03-04 | Approved by Ed (Steward) | Ed |

@@ -2,7 +2,7 @@
 
 **Decision ID:** DEC-20260303-006
 **Title:** Memory Pipeline Architecture Adopted
-**Status:** Proposed
+**Status:** Approved
 **Date:** 2026-03-03
 **Owner / Approver:** Ed (Steward)
 
@@ -23,12 +23,39 @@ The memory pipeline — comprising `get-scout-session.sh`, `extract-session-tran
 - Nightly cadence is appropriate for daily operational memory without excessive processing overhead
 - `#executive` delivery ensures Ed and the executive team have visibility into memory pipeline health
 
+## Memory Pruning Policy
+
+Memory files accumulate indefinitely without management. The following pruning rules apply:
+
+### Daily Memory Files (`memory/YYYY-MM-DD.md`)
+- **Retention:** 90 days rolling window
+- **After 90 days:** Daily files are archived to `memory/archive/YYYY/` (not deleted)
+- **Archive format:** Unchanged — preserve original content
+- **Trigger:** Knowledge-ops checks for eligible files during each nightly run and moves any that exceed the 90-day window
+
+### Master Memory (`MEMORY.md`)
+- **Retention:** Permanent — never pruned automatically
+- **Policy:** MEMORY.md is a curated summary, not a raw log. Knowledge-ops may propose additions but may not delete or overwrite entries without explicit Ed (Steward) approval
+- **Review cadence:** Ed reviews MEMORY.md for staleness monthly (or on-demand)
+
+### Archive Pruning
+- Archive files older than 1 year may be deleted by Scout with Ed's explicit approval
+- No automatic deletion of archives without human sign-off
+
+### Rationale
+- 90-day rolling window balances context availability vs. storage growth
+- Archive-before-delete prevents irreversible loss
+- MEMORY.md as permanent curated record preserves institutional knowledge
+- Human approval gate on archive deletion protects against accidental data loss
+
+---
+
 ## Tradeoffs / Risks
 
 - Pipeline depends on Scout session JSONL availability — if session logging fails, nightly digest produces no output
 - `extract-session-transcript.py` quality directly affects memory accuracy — script errors can corrupt memory
 - Single-agent pipeline (knowledge-ops) is a single point of failure; no fallback if knowledge-ops heartbeat fails
-- Memory files grow over time — no pruning policy defined yet (future governance item)
+- Memory archive directory grows over time — annual deletion requires explicit Ed approval
 
 ## Impacts
 
@@ -58,3 +85,5 @@ The memory pipeline — comprising `get-scout-session.sh`, `extract-session-tran
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-03-03 | Initial draft | Governance Ops |
+| 2026-03-04 | Approved by Ed (Steward) | Ed |
+| 2026-03-05 | Memory Pruning Policy added — Approved by Ed (Steward) | Scout |

@@ -2,7 +2,7 @@
 
 **Decision ID:** DEC-20260303-002
 **Title:** Restrict Mattermost and Cal.com Access to Tailscale Network Only
-**Status:** Deferred
+**Status:** Approved
 **Date:** 2026-03-03
 **Owner / Approver:** Ed (Steward)
 
@@ -29,8 +29,8 @@ Access to Mattermost and Cal.com will be restricted to Tailscale-authenticated u
 3. **No Docker changes required** — services continue to bind to `0.0.0.0` internally; access control is enforced at the OS/Tailscale layer
 
 ### Access after implementation:
-- Mattermost: `https://edlicious-server.<tailnet>.ts.net`
-- Cal.com: `https://edlicious-server.<tailnet>.ts.net:4430`
+- Mattermost: `https://edlicious-server.tailebe6d3.ts.net`
+- Cal.com: `https://edlicious-server.tailebe6d3.ts.net/calcom`
 - Direct LAN access (192.168.x.x:8065, :3000): blocked
 
 ## Rationale
@@ -76,3 +76,4 @@ Access to Mattermost and Cal.com will be restricted to Tailscale-authenticated u
 | 2026-03-03 | Initial draft — Docker IP binding approach | Governance Ops |
 | 2026-03-03 | Revised — Tailscale Serve + pf firewall approach after Docker binding failure | Scout |
 | 2026-03-03 | Status set to Deferred — revisit when adding external collaborators or after Cal.com test/deploy cycle | Scout |
+| 2026-03-04 | Approved by Ed (Steward) — execute Tailscale Serve + pf firewall | Ed |

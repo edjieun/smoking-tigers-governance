@@ -2,7 +2,7 @@
 
 **Decision ID:** DEC-20260303-005
 **Title:** EA Pipeline Defined (Intake, Templates, Naming, Routing)
-**Status:** Proposed
+**Status:** Approved
 **Date:** 2026-03-03
 **Owner / Approver:** Ed (Steward)
 
@@ -65,3 +65,4 @@ The EA pipeline as defined in `docs/ea-pipeline.md` is the official operating st
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-03-03 | Initial draft | Governance Ops |
+| 2026-03-04 | Approved by Ed (Steward) | Ed |
