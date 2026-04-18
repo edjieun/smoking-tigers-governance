@@ -1,0 +1,38 @@
+{
+  "google_docs": [
+    {
+      "title": "STM Tool Schema: GitHub",
+      "id": "1DUq9V5P3gEV95N3GibNOYriOw-Di2Xn57DqBS1OMjyE",
+      "url": "https://docs.google.com/document/d/1DUq9V5P3gEV95N3GibNOYriOw-Di2Xn57DqBS1OMjyE/edit?usp=drivesdk"
+    },
+    {
+      "title": "STM Tool Schema: Notion",
+      "id": "1uMoGU7K0pinK5AGhSveoNx9qeoEqsD8jCXlbyKvlqak",
+      "url": "https://docs.google.com/document/d/1uMoGU7K0pinK5AGhSveoNx9qeoEqsD8jCXlbyKvlqak/edit?usp=drivesdk"
+    },
+    {
+      "title": "STM Tool Schema: Discord",
+      "id": "1EA2oe_2Ha7Z5xbnS2FVEJHEPCkBkQo9O5Bot2tACN6o",
+      "url": "https://docs.google.com/document/d/1EA2oe_2Ha7Z5xbnS2FVEJHEPCkBkQo9O5Bot2tACN6o/edit?usp=drivesdk"
+    },
+    {
+      "title": "STM Tool Schema: Mattermost",
+      "id": "1Z4BGyLv7UepH3XMdcFo8a3cXzVJWc5nBI1ofDJAVnfM",
+      "url": "https://docs.google.com/document/d/1Z4BGyLv7UepH3XMdcFo8a3cXzVJWc5nBI1ofDJAVnfM/edit?usp=drivesdk"
+    },
+    {
+      "title": "STM Tool Schema: OpenClaw",
+      "id": "1b3V5LLMwSR5SHheOgxGeZy6uwdR_j46BFJOcJsXPR8s",
+      "url": "https://docs.google.com/document/d/1b3V5LLMwSR5SHheOgxGeZy6uwdR_j46BFJOcJsXPR8s/edit?usp=drivesdk"
+    }
+  ],
+  "notion_document_page_ids": [
+    "32e6f6ac-689e-811a-aca9-ff6b49fd9bf2",
+    "32e6f6ac-689e-8135-8734-ff986332e396",
+    "32e6f6ac-689e-8177-b764-ec3f4d2cd6fd",
+    "32e6f6ac-689e-81b4-bb31-d44e9d6770fd",
+    "32e6f6ac-689e-81c1-92d8-da6c1447d567"
+  ],
+  "notion_project_id": "32e6f6ac-689e-814a-bd50-dc6d70ca7c83",
+  "project_docs_linked": true
+}

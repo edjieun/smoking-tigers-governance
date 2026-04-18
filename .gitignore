@@ -2,3 +2,37 @@
 *.swp
 .env
 node_modules/
+
+# Credentials and secrets
+agents/*/auth.json
+agents/*/auth-state.json
+agents/*/auth-profiles.json
+agents/*/models.json
+*.key
+*.pem
+
+# Logs (large, regeneratable)
+logs/
+
+# Binary/media files
+*.pdf
+*.docx
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mp3
+
+# Temp and cache
+.openclaw/
+.clawhub/
+caddy/
+
+# Memory (managed separately via memory_search)
+memory/
+knowledge-ops/
+
+# Large agent state
+agents/*/calcom/
+agents/

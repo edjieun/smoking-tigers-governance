@@ -1,0 +1,3 @@
+- Run heartbeat checks every hour.
+  - This ensures the system's health and consistency are regularly checked.
+- Log system status updates daily.

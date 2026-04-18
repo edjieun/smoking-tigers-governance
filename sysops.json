@@ -1,0 +1,26 @@
+
+{
+  "id": "sysops",
+  "name": "System Operations",
+  "workspace": "/Users/edlicious/.openclaw/workspace/sysops",
+  "agentDir": "/Users/edlicious/.openclaw/workspace/agents/sysops",
+  "model": {
+    "primary": "ollama/qwen2.5:14b-instruct",
+    "fallbacks": [
+      "anthropic/claude-opus-4-6"
+    ]
+  }
+}
+
+{
+  "id": "ea",
+  "name": "Executive Assistant",
+  "workspace": "/Users/edlicious/.openclaw/workspace/ea",
+  "agentDir": "/Users/edlicious/.openclaw/workspace/agents/ea",
+  "model": {
+    "primary": "ollama/qwen2.5:7b-instruct",
+    "fallbacks": [
+      "anthropic/claude-opus-4-6"
+    ]
+  }
+}
