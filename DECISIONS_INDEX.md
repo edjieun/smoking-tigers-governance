@@ -36,3 +36,4 @@ All governance and operational decisions, ordered by date.
 | DEC-20260324-001 | [Memory Architecture Upgrade — Compaction, Deduplication, and Session Boundary Discipline](decisions/2026/DEC-20260324-001-memory-architecture-upgrade.md) | Approved | 2026-03-24 | Ed (Steward) |
 | DEC-20260324-002 | [Agent Memory Boundaries — Private, Shared, and Handoff Rules](decisions/2026/DEC-20260324-002-agent-memory-boundaries.md) | Approved | 2026-03-24 | Ed (Steward) |
 | DEC-20260324-003 | [Knowledge Source Unification — Canonical Sources, Retrieval Gaps, and Fragmentation Policy](decisions/2026/DEC-20260324-003-knowledge-source-unification.md) | Approved | 2026-03-24 | Ed (Steward) |
+| DEC-20260417-001 | [QMD Search Index and Obsidian Vault Adopted as Active Memory Layer](decisions/2026/DEC-20260417-001-qmd-obsidian-memory-layer.md) | Approved | 2026-04-17 | Ed (Steward) |

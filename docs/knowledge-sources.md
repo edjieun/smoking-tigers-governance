@@ -1,8 +1,8 @@
 # Canonical Knowledge Source Registry
 
-**Last Updated:** 2026-03-24
+**Last Updated:** 2026-04-17
 **Owner:** Ed (Steward)
-**Governing Decision:** DEC-20260324-003
+**Governing Decisions:** DEC-20260324-003, DEC-20260417-001
 
 ---
 
@@ -11,9 +11,11 @@
 | Source | Canonical For | Agent Access Method | Indexed? | Phase |
 |---|---|---|---|---|
 | OpenClaw workspace | Agent config, memory, SOPs, HEARTBEAT | Always loaded | Yes (memory_search) | Active |
-| GitHub (`smoking-tigers-governance`) | Governance decisions, policies, architecture docs | `read` tool (on-demand) | Planned Phase 2 | Manual |
+| GitHub (`smoking-tigers-governance`) | Governance decisions, policies, architecture docs | `read` tool + `qmd query` | **Yes (QMD `srv`)** | **Active** |
 | Notion (STM teamspace) | Projects, tasks, meetings, structured records | Notion API | Planned Phase 3 | Manual |
-| Google Drive (STM folder) | Reports, docs, production assets | Drive API / `memory/drive-index.md` | Planned Phase 2 | Manual |
+| Google Drive (STM folder) | Reports, docs, production assets | Drive API | No | Manual |
+| **QMD search index** | **Local hybrid search across all `.md` collections** | **`qmd query` via exec** | **Yes** | **Active** |
+| **Obsidian vault** | **Human-readable org memory, project context, daily logs** | **MCP server + QMD** | **Yes (QMD `obsidian-stm`)** | **Active** |
 | Desktop/intake/ | Incoming documents (ephemeral) | Heartbeat / `read` tool | No | Ephemeral |
 | `memory/YYYY-MM-DD.md` | Daily agent session logs | memory_search | Yes | Active |
 | `MEMORY.md` | Global institutional memory | Always loaded | Yes | Active |
@@ -59,20 +61,54 @@ If a conflict exists between sources, agents flag it rather than resolve silentl
 ## Agent Retrieval Order
 
 When an agent needs information and is unsure where it lives:
-1. `memory_search` (workspace + daily files)
-2. Notion API (projects, tasks, meetings)
-3. GitHub governance repo via `read` tool
-4. Google Drive index (`memory/drive-index.md`) or direct doc fetch
-5. If not found → flag as knowledge gap to Scout / Ed
+1. `memory_search` (OpenClaw workspace + daily files)
+2. `qmd query` — hybrid search across governance repo, project files, and vault
+3. Notion API (projects, tasks, meetings)
+4. GitHub governance repo via `read` tool (specific doc after QMD surfaces it)
+5. Google Drive API (specific document fetch)
+6. If not found after all five → flag as knowledge gap to Scout / Ed
+
+**QMD is step 2.** It closes the Phase 2 governance indexing gap and replaces the planned knowledge-ops nightly indexing approach.
 
 **Agents must not fabricate answers when information is not retrievable.**
 
 ---
 
+## QMD Collections
+
+| Collection | Path | Content |
+|---|---|---|
+| `srv` | `/Users/edlicious/srv/` | Governance decisions, policies, architecture docs |
+| `obsidian-stm` | Smoking Tigers Obsidian vault | Org memory, project notes, daily logs |
+
+**Maintenance scripts:** `~/.openclaw/workspace/scripts/qmd-index.sh` and `qmd-embed.sh`
+**Cron:** Daily 3 AM Pacific (`qmd-daily-reindex`)
+
+## Obsidian Vault
+
+**Location:** Google Drive — `q1 Creative/Smoking Tigers/Obsidian/smoking tigers vault`
+**MCP server:** `obsidian-mcp-server` in OpenClaw config
+
+**Vault structure:**
+```
+01-Session-Logs/    — Agent session summaries
+02-Knowledge-Base/  — Reference: org overview, systems, tools
+03-Projects/        — Active project files with task context
+04-Daily-Notes/     — Daily notes (YYYY-MM-DD.md)
+openclaw.md         — Agent stack reference
+```
+
+**Write rules:**
+- V-1: Vault is a synthesis layer — summarize and link, don't replace canonical sources
+- V-2: Link, don't copy content
+- V-3: YAML frontmatter required on all files
+- V-4: Daily notes are ephemeral summaries, not canonical state
+- V-5: Project files kept current; stale files marked `status: archived`
+
 ## Retrieval Roadmap
 
-| Phase | Task | Owner | Target |
-|---|---|---|---|
-| Phase 2 | Index GitHub governance decisions/policies in nightly run | knowledge-ops | 2026-04-07 |
-| Phase 2 | Maintain `memory/drive-index.md` (weekly Drive doc listing) | knowledge-ops | 2026-04-07 |
-| Phase 3 | Maintain `memory/notion-projects.md` (weekly Notion project summary) | knowledge-ops | 2026-04-14 |
+| Phase | Task | Status |
+|---|---|---|
+| Phase 2 | QMD: index governance repo + project files | ✅ Complete (2026-04-17) |
+| Phase 2 | Obsidian vault: human-readable memory layer | ✅ Complete (2026-04-17) |
+| Phase 3 | Maintain `memory/notion-projects.md` (weekly Notion project summary) | Planned |
