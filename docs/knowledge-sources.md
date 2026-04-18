@@ -2,7 +2,7 @@
 
 **Last Updated:** 2026-04-17
 **Owner:** Ed (Steward)
-**Governing Decisions:** DEC-20260324-003, DEC-20260417-001
+**Governing Decisions:** DEC-20260324-003, DEC-20260417-001, DEC-20260417-002
 
 ---
 
@@ -11,11 +11,12 @@
 | Source | Canonical For | Agent Access Method | Indexed? | Phase |
 |---|---|---|---|---|
 | OpenClaw workspace | Agent config, memory, SOPs, HEARTBEAT | Always loaded | Yes (memory_search) | Active |
-| GitHub (`smoking-tigers-governance`) | Governance decisions, policies, architecture docs | `read` tool + `qmd query` | **Yes (QMD `srv`)** | **Active** |
-| Notion (STM teamspace) | Projects, tasks, meetings, structured records | Notion API | Planned Phase 3 | Manual |
+| GitHub (`smoking-tigers-governance`) | Governance decisions, policies, architecture docs | `read` tool + `qmd query` | Yes (QMD `srv`) | Active |
+| **Linear** | **Issue tracking, project coordination, agent task audit trail** | **Linear GraphQL API** | **No (live API)** | **Active** |
+| Notion (STM teamspace) | Meetings, contributor records, strategic initiatives, financial records | Notion API | Planned Phase 3 | Manual |
 | Google Drive (STM folder) | Reports, docs, production assets | Drive API | No | Manual |
-| **QMD search index** | **Local hybrid search across all `.md` collections** | **`qmd query` via exec** | **Yes** | **Active** |
-| **Obsidian vault** | **Human-readable org memory, project context, daily logs** | **MCP server + QMD** | **Yes (QMD `obsidian-stm`)** | **Active** |
+| QMD search index | Local hybrid search across all `.md` collections | `qmd query` via exec | Yes | Active |
+| Obsidian vault | Human-readable org memory, project context, daily logs | MCP server + QMD | Yes (QMD `obsidian-stm`) | Active |
 | Desktop/intake/ | Incoming documents (ephemeral) | Heartbeat / `read` tool | No | Ephemeral |
 | `memory/YYYY-MM-DD.md` | Daily agent session logs | memory_search | Yes | Active |
 | `MEMORY.md` | Global institutional memory | Always loaded | Yes | Active |
@@ -28,9 +29,10 @@
 When content exists in more than one source, this hierarchy determines truth:
 
 1. **GitHub governance repo** — policy and decisions
-2. **Notion** — project/task/meeting state
-3. **OpenClaw workspace** — operational agent config
-4. **Google Drive** — document artifacts
+2. **Linear** — issue and task state
+3. **Notion** — meeting records, contributor data, strategic registry
+4. **OpenClaw workspace** — operational agent config
+5. **Google Drive** — document artifacts
 
 If a conflict exists between sources, agents flag it rather than resolve silently.
 
@@ -40,9 +42,16 @@ If a conflict exists between sources, agents flag it rather than resolve silentl
 
 **F-1: Single Source of Truth per Content Type**
 - Governance decisions → GitHub repo only
-- Project/task status → Notion Strategy DB only
+- **Issue tracking and task coordination → Linear only** (new)
+- Meeting records → Notion only
+- Strategic initiative registry → Notion (archive) + Linear (live view)
 - Agent configuration → OpenClaw workspace only
 - Production assets and reports → Google Drive only
+
+**F-5: Linear as Agent Task Surface** (new)
+- AI agents create tasks in Linear, not Notion
+- Agent-created issues carry the `agent-task` label
+- Notion Exec Team Task Tracker is read-only legacy after 2026-04-17
 
 **F-2: No Redundant Copies**
 - Do not copy content between systems — use URL links instead
@@ -63,12 +72,13 @@ If a conflict exists between sources, agents flag it rather than resolve silentl
 When an agent needs information and is unsure where it lives:
 1. `memory_search` (OpenClaw workspace + daily files)
 2. `qmd query` — hybrid search across governance repo, project files, and vault
-3. Notion API (projects, tasks, meetings)
-4. GitHub governance repo via `read` tool (specific doc after QMD surfaces it)
-5. Google Drive API (specific document fetch)
-6. If not found after all five → flag as knowledge gap to Scout / Ed
+3. **Linear GraphQL API** — issue and project status (when task/project context is needed)
+4. Notion API — meetings, contributors, strategic context
+5. GitHub governance repo via `read` tool (specific doc after QMD surfaces it)
+6. Google Drive API (specific document fetch)
+7. If not found after all six → flag as knowledge gap to Scout / Ed
 
-**QMD is step 2.** It closes the Phase 2 governance indexing gap and replaces the planned knowledge-ops nightly indexing approach.
+**QMD is step 2. Linear is step 3.**
 
 **Agents must not fabricate answers when information is not retrievable.**
 
