@@ -1,0 +1,45 @@
+name: Nightly MOR Compliance Check
+
+on:
+  schedule:
+    # Run nightly at 2 AM UTC (6 PM PT / 7 PM PDT)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      notify:
+        description: 'Send Mattermost notification on success'
+        required: false
+        default: 'true'
+
+jobs:
+  mor-check:
+    name: MOR Compliance Audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout governance repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests python-dateutil
+
+      - name: Run MOR compliance check
+        id: mor_check
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_STM_TOKEN }}
+          MATTERMOST_WEBHOOK: ${{ secrets.MATTERMOST_WEBHOOK_URL }}
+        run: python .github/scripts/mor_check.py
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mor-audit-report-${{ github.run_id }}
+          path: mor-audit-report.json
+          retention-days: 30
