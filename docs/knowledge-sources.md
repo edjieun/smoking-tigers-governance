@@ -1,8 +1,8 @@
 # Canonical Knowledge Source Registry
 
-**Last Updated:** 2026-04-17
+**Last Updated:** 2026-04-18
 **Owner:** Ed (Steward)
-**Governing Decisions:** DEC-20260324-003, DEC-20260417-001, DEC-20260417-002
+**Governing Decisions:** DEC-20260324-003, DEC-20260417-001, DEC-20260417-002, DEC-20260418-001
 
 ---
 
@@ -10,17 +10,15 @@
 
 | Source | Canonical For | Agent Access Method | Indexed? | Phase |
 |---|---|---|---|---|
-| OpenClaw workspace | Agent config, memory, SOPs, HEARTBEAT | Always loaded | Yes (memory_search) | Active |
-| GitHub (`smoking-tigers-governance`) | Governance decisions, policies, architecture docs | `read` tool + `qmd query` | Yes (QMD `srv`) | Active |
-| **Linear** | **Issue tracking, project coordination, agent task audit trail** | **Linear GraphQL API** | **No (live API)** | **Active** |
-| Notion (STM teamspace) | Meetings, contributor records, strategic initiatives, financial records | Notion API | Planned Phase 3 | Manual |
-| Google Drive (STM folder) | Reports, docs, production assets | Drive API | No | Manual |
-| QMD search index | Local hybrid search across all `.md` collections | `qmd query` via exec | Yes | Active |
-| Obsidian vault | Human-readable org memory, project context, daily logs | MCP server + QMD | Yes (QMD `obsidian-stm`) | Active |
-| Desktop/intake/ | Incoming documents (ephemeral) | Heartbeat / `read` tool | No | Ephemeral |
-| `memory/YYYY-MM-DD.md` | Daily agent session logs | memory_search | Yes | Active |
+| **Obsidian vault** | **All org memory, project context, system reference, SOPs, daily logs** | **MCP server + QMD `obsidian-stm`** | **Yes** | **Active — Primary** |
+| OpenClaw workspace | Agent config, HEARTBEAT, daily session files | Always loaded | Yes (memory_search) | Active |
+| GitHub (`smoking-tigers-governance`) | Governance decisions, policies, charters | `read` tool + QMD `srv` | Yes | Active |
+| Linear | Issue tracking, project coordination, agent task audit | Linear GraphQL API | No (live) | Active |
+| Notion | Meetings, contributors, financial records (structured DBs) | Notion API | No | Manual |
+| Google Drive | Production assets, reports, recordings | Drive API | No | Manual |
+| QMD `srv` | Full-text + semantic search across governance + workspace | `qmd query` | Yes | Active |
+| `memory/YYYY-MM-DD.md` | Daily agent session files | memory_search | Yes | Active |
 | `MEMORY.md` | Global institutional memory | Always loaded | Yes | Active |
-| `memory/shared.md` | Cross-agent operational summaries | Always loaded | Yes | Active |
 
 ---
 
@@ -70,15 +68,16 @@ If a conflict exists between sources, agents flag it rather than resolve silentl
 ## Agent Retrieval Order
 
 When an agent needs information and is unsure where it lives:
-1. `memory_search` (OpenClaw workspace + daily files)
-2. `qmd query` — hybrid search across governance repo, project files, and vault
-3. **Linear GraphQL API** — issue and project status (when task/project context is needed)
-4. Notion API — meetings, contributors, strategic context
-5. GitHub governance repo via `read` tool (specific doc after QMD surfaces it)
-6. Google Drive API (specific document fetch)
-7. If not found after all six → flag as knowledge gap to Scout / Ed
+1. **Vault** (`obsidian-stm` QMD collection or MCP server) — primary memory
+2. `memory_search` — OpenClaw workspace daily files and MEMORY.md
+3. `qmd query` — broader search across all indexed collections
+4. Linear GraphQL API — issue and project status
+5. Notion API — meetings, contributors, financial records
+6. GitHub governance repo via `read` tool — specific policy/decision lookup
+7. Google Drive API — specific document fetch
+8. If not found → flag as knowledge gap to Scout / Ed
 
-**QMD is step 2. Linear is step 3.**
+**The vault is now step 1.**
 
 **Agents must not fabricate answers when information is not retrievable.**
 

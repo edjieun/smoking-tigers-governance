@@ -38,3 +38,4 @@ All governance and operational decisions, ordered by date.
 | DEC-20260324-003 | [Knowledge Source Unification — Canonical Sources, Retrieval Gaps, and Fragmentation Policy](decisions/2026/DEC-20260324-003-knowledge-source-unification.md) | Approved | 2026-03-24 | Ed (Steward) |
 | DEC-20260417-001 | [QMD Search Index and Obsidian Vault Adopted as Active Memory Layer](decisions/2026/DEC-20260417-001-qmd-obsidian-memory-layer.md) | Approved | 2026-04-17 | Ed (Steward) |
 | DEC-20260417-002 | [Linear Adopted as Issue Tracking and Project Coordination Layer](decisions/2026/DEC-20260417-002-linear-adopted-issue-tracking.md) | Approved | 2026-04-17 | Ed (Steward) |
+| DEC-20260418-001 | [Obsidian Vault Established as Primary Memory Source for All Agents](decisions/2026/DEC-20260418-001-obsidian-vault-primary-memory-source.md) | Approved | 2026-04-18 | Ed (Steward) |
