@@ -3,7 +3,7 @@
 **Status:** Active — intake phase (Milestone 1)
 **Owner:** Ed (Steward)
 **Created:** 2026-03-02
-**Last Updated:** 2026-03-02
+**Last Updated:** 2026-04-24
 
 ---
 
@@ -24,7 +24,9 @@ Nick is currently at **Milestone 1**: establishing a repeatable recording setup 
 
 ---
 
-## RevPoints Purchase — Confirmed Transaction
+## RevPoints — Nick's RP Ledger Summary
+
+### Purchase History
 
 | Field | Value |
 |---|---|
@@ -40,6 +42,27 @@ Nick is currently at **Milestone 1**: establishing a repeatable recording setup 
 | Possible 2nd payment | $2,500 additional (~1 month later, same rate) |
 
 **Model explanation:** RP face value is $1/RP (standard Q1). Nick purchases the right to use them at $0.20/RP — a discounted rate giving him additional runway to pay for production services in lieu of cash.
+
+### Contributor RP Earnings
+
+**Effective 2026-04-24:** Nick is a Contributor and earns Rev Points for his active participation in Trade Like Nick.
+
+| Field | Value |
+|---|---|
+| Contributor Status | ✅ Active — 2026-04-24 |
+| RP Earning Rate | TBD — Steward to define |
+| Earning Triggers | TBD — per video / milestone / recurring |
+| First Earnings Entry | Pending (RPL-2026-004+) |
+
+### Current RP Balance
+
+| Event | RP |
+|---|---|
+| Purchased (2026-03-02) | +12,500 |
+| TLN Ops Workspace (2026-03-13) | -4,575 |
+| **Current Balance** | **7,925** |
+
+> Contributor earnings will increase this balance as they are logged.
 
 ---
 
@@ -74,12 +97,12 @@ Recovery mechanics follow standard Q1 governance once defined.
 
 ## Team (Active)
 
-| Person | Role |
-|--------|------|
-| Nick Pham | Creator — TLN |
-| Ed Hwang | Steward — operating system, governance, contract, automation |
-| Basil Childers | Brand/creative direction, early production support |
-| Robert | Editing / post-production |
+| Person | Role | RP Relationship |
+|--------|------|----------------|
+| Nick Pham | Creator — TLN / **Contributor** | Earns RP for participation |
+| Ed Hwang | Steward — operating system, governance, contract, automation | RP Issuer |
+| Basil Childers | Brand/creative direction, early production support | TBD |
+| Robert | Editing / post-production | TBD |
 
 ---
 

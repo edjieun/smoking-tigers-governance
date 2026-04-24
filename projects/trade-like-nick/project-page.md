@@ -26,9 +26,14 @@
 
 | Record | Location | Status |
 |---|---|---|
-| Rev Point Ledger | `finance/rev-point-ledger/entries/2026-03-02-nick-initial.md` | DRAFT — pending RTPA |
+| RPL-2026-001 — Initial RP Purchase | `finance/rev-point-ledger/entries/2026-03-02-nick-initial.md` | ✅ CONFIRMED |
+| RPL-2026-002 — TLN Ops Workspace Charge | `finance/rev-point-ledger/entries/2026-03-13-nick-tln-ops-workspace.md` | ✅ APPROVED |
+| RPL-2026-003 — Contributor Status | `finance/rev-point-ledger/entries/2026-04-24-nick-contributor-status.md` | ✅ CONFIRMED 2026-04-24 |
 | Income Tracking | `finance/income-tracking/` (entry to be added) | PENDING NOTION SETUP |
 | RP → Cash Conversions | `finance/rp-cash-conversions/` | No entries yet |
+
+**Nick's Current RP Balance: 7,925 RP** (as of 2026-04-24, pre-earnings)
+**Contributor Status: ✅ Active — earns RP for participation**
 
 ### Notion DB Links (once created)
 - Rev Point Ledger: TBD
