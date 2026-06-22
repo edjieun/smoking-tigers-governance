@@ -62,11 +62,19 @@ Check SKILL.md when a specific skill is needed.
 ---
 
 ## Governance
-STM: /Users/edlicious/srv/q1/governance/smoking-tigers-governance
-— Entrypoint: docs/index.md
-Q1: /Users/edlicious/srv/q1/governance/q1-governance
-— Entrypoint: README.md
+Each machine defines its own local governance clone path.
+The standard convention is: `~/SmokingTigers/governance/`
+
+Find your machine's configured path in `openclaw.json` → `governance.localPath`
+
+STM governance repo:
+  `{GOVERNANCE_ROOT}/smoking-tigers-governance/`
+  — Entrypoint: README.md
+
 Open the entrypoint first. Always.
+
+Agents may READ governance docs freely.
+Agents may NOT self-approve policy, merge governance PRs, or silently overwrite canonical files.
 
 ---
 

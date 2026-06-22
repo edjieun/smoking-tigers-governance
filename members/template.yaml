@@ -1,0 +1,41 @@
+# Member Enrollment Template
+# Copy this file to members/<your-device-id>.yaml and fill in all fields.
+# Submit as a Pull Request to edjieun/smoking-tigers-governance.
+#
+# device_id: a short, unique slug for your machine (e.g. hostname, or descriptive label)
+#   Convention: lowercase, hyphens only, no spaces (e.g. "janes-mac-studio", "team-vps-01")
+
+device_id: your-device-id-here
+
+# operator: your GitHub handle
+operator: your-github-handle
+
+# trust_level: owner | contributor | observer
+#   - observer: default for new community members
+#   - contributor: executive council members; requires steward approval
+#   - owner: founding steward only
+trust_level: observer
+
+# local_governance_path: where you cloned this repo on your machine
+#   Recommended: ~/SmokingTigers/governance
+local_governance_path: ~/SmokingTigers/governance
+
+# local_openclaw_path: root of your local openclaw installation
+#   Common values: ~/.openclaw  or  /Volumes/<name>/.openclaw
+local_openclaw_path: ~/.openclaw
+
+# agents: list the agent IDs you are running on this machine
+#   See sysops.json for available agent templates
+agents:
+  - id: main
+    name: Scout
+
+# mattermost_notify: channel slug to receive membership event notifications
+#   Leave blank if your machine is not connected to STE Mattermost
+mattermost_notify: ""
+
+# notes: optional free-text field for context about this machine/deployment
+notes: ""
+
+# joined: date this enrollment was submitted (YYYY-MM-DD)
+joined: YYYY-MM-DD
