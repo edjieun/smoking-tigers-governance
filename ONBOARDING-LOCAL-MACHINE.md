@@ -1,12 +1,12 @@
 # **Onboarding — Local Machine Using the Smoking Tigers Governance Repository**
 
-Status: Draft v1.0
+Status: Draft v1.1
 
 Owner: Ed (Steward)
 
 Applies To: Executive Council and authorized operators running local OpenClaw instances
 
-Last Updated: 2026-02-23
+Last Updated: 2026-06-22
 
 ## **Purpose**
 
@@ -26,19 +26,35 @@ The goal is:
 
 **Your machine runs locally. The governance repo provides the shared operating rules.**
 
+## **Step 0 — Register Your Machine (Required First)**
+
+Before setting up locally, submit a Pull Request to enroll your machine in the
+member registry.
+
+1. Copy `members/template.yaml` to `members/<your-device-id>.yaml`
+2. Fill in all fields (device_id, operator, trust_level, agents, etc.)
+3. Submit a Pull Request to `edjieun/smoking-tigers-governance`
+4. Wait for approval and merge before proceeding
+
+This makes your machine's participation explicit, auditable, and governed.
+
+---
+
 ## **Before You Start**
 
 You should have:
 
 * a local machine you control (Mac/Linux recommended)
 
-* Git installed
+* Git installed and a GitHub account
 
-* access to the Smoking Tigers governance repo
+* `gh` CLI installed and authenticated (`gh auth login`) — recommended
+
+* access to the Smoking Tigers governance repo (public: clone freely; for contributions, fork or request write access)
 
 * a local OpenClaw instance (installed or planned)
 
-* a local model runtime (e.g., Ollama) if you plan to use local agents
+* a local model runtime (e.g., Ollama or LM Studio) if you plan to use local agents
 
 * permission to participate in governance contributions (if contributing changes)
 
@@ -86,17 +102,26 @@ When in doubt: **local/restricted by default**.
 
 Clone the repo to a stable local path on your machine.
 
-Suggested pattern (example):
+**Recommended path:** `~/SmokingTigers/governance/`
 
-* \~/SmokingTigers/governance/
+```bash
+# Using gh CLI (recommended — uses your authenticated GitHub session)
+mkdir -p ~/SmokingTigers
+gh repo clone edjieun/smoking-tigers-governance ~/SmokingTigers/governance
 
-Use your standard Git method (SSH/HTTPS) per your access setup.
+# Or using git directly
+mkdir -p ~/SmokingTigers
+git clone https://github.com/edjieun/smoking-tigers-governance.git ~/SmokingTigers/governance
+```
 
 ### **Notes**
 
-* Keep this repo versioned and pull updates regularly.
+* Keep this repo versioned and pull updates on every heartbeat (see Step 9).
 
 * Do not mix unrelated local working files into the repo.
+
+* Add a `governance` block to your local `openclaw.json` pointing to this path
+  (see `members/template.yaml` for the recommended fields).
 
 ---
 
