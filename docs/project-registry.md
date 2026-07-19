@@ -25,21 +25,23 @@ maintainer: Ed Hwang
 
 ---
 
-### Smoking Tigers AI Buildout *(this system)*
-- **Status:** Active — Phase 2 complete; Phase 3 (validation) pending Friday
+### Project TigerClaw *(this system — formerly "Smoking Tigers AI Buildout" / "ST:AI")*
+- **Status:** Active — Phase 4 in progress
 - **Members:** Ed Hwang
-- **Outcome/Deliverable:** Autonomous transcript-to-tasks pipeline; Mac Mini as scheduled agent executor; all members on Mattermost
+- **Tier:** Network + On Premise + On Device
+- **Objective:** Custom on-premise AI OS serving as operational backbone for all STE projects
 - **Workspace:** `/Discovery/`
-- **GitHub:** `edjieun/ste-secrets` (vault), `edjieun/ste-agents-archive` (archived configs)
+- **GitHub:** `edjieun/ste-secrets` (vault), `edjieun/ste-agents-archive` (archived configs), `edjieun/smoking-tigers-governance` (SOPs + ADRs)
 - **OpenProjects:** [Project #12 — ste-ai-buildout](https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-ai-buildout)
-- **Key Docs:** `docs/projects/smoking-tigers-ai-buildout.md`, `docs/adr/0001-smoking-tigers-ai-domain-model.md`, `docs/mattermost-setup.md`, `docs/openprojects-spec-template.md`
-- **Last Session:** 2026-07-16
+- **Key Docs:** `docs/projects/smoking-tigers-ai-buildout.md`, `docs/adr/`, `docs/sop-openprojects-work-surface.md`
+- **Last Session:** 2026-07-19
 - **Phases:**
   - Phase 0: Encrypted secrets repo ✔
   - Phase 1: Mac Mini inference server (LM Studio + Qwen3.5 9B) ✔
-  - Phase 2: OpenClaw rebuilt, Mattermost channels + Christine account, Scout wired ✔
-  - Phase 3: Friday verification test (Ed+Sage transcript) + Qwen orchestration validation ← **next**
-- **Open Tasks:** See `docs/task-log.md` → Project: Smoking Tigers AI Buildout
+  - Phase 2: OpenClaw rebuilt, Mattermost channels + Scout wired ✔
+  - Phase 3: Pipeline reconnected (Scout ↔ Mattermost ↔ OP) ✔
+  - Phase 4: OP as work surface, grill-with-docs skill, TigerClaw manual ← **current**
+- **Open Tasks:** See [OP #12](https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-ai-buildout)
 
 ---
 

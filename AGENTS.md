@@ -78,5 +78,34 @@ Agents may NOT self-approve policy, merge governance PRs, or silently overwrite 
 
 ---
 
+## OpenProjects Configuration
+
+```yaml
+openprojects:
+  url: https://ste-business-server.tailebe6d3.ts.net:8080
+  project_id: 12
+  project_identifier: ste-ai-buildout
+```
+
+## Project TigerClaw — Tier Tags
+
+```yaml
+project_tigerclaw:
+  tiers:
+    - network      # OpenRouter, Tailscale, external APIs, cloud
+    - on-premise   # Mac Mini services, M1 (OP + LedgerSMB), Mattermost
+    - on-device    # M4 Laptop — Obsidian, Copilot, OpenCode
+```
+
+## Governance Repo
+
+```yaml
+governance_repo: edjieun/smoking-tigers-governance
+governance_docs: docs/
+workspace_adrs: docs/adr/
+```
+
+---
+
 ## This File
 Changes only with explicit human instruction.
