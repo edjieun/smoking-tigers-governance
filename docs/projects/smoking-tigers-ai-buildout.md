@@ -1,12 +1,21 @@
 ---
-project: Smoking Tigers AI Buildout
-status: Active — Phase 3 in progress (pipeline verified)
+project: Project TigerClaw
+former-name: Smoking Tigers AI Buildout / ST:AI
+status: Active — Phase 4 in progress
 last-updated: 2026-07-19
 members: [Ed Hwang]
-outcome: TigerClaw (lean local fork) running on Mac Mini with ZeroClaw memory system; multi-source input pipeline via Nerve kanban in progress
+op_project: https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-ai-buildout
+op_id: 12
+tier: Network + On Premise + On Device
+objective: Build a custom on-premise AI OS — three tiers (Network / On Premise / On Device) — serving as operational backbone for all STE projects
+output: Autonomous pipeline (transcript → tasks), ZeroClaw memory, Nerve kanban, TigerClaw Manual in gov repo, Journal database
+deadline: Ongoing — Phase 4 next session
+blocker: Pipeline end-to-end test not yet confirmed post-reconnect
 ---
 
-# Smoking Tigers AI Buildout
+# Project TigerClaw
+
+> Previously: "Smoking Tigers AI Buildout" / "ST:AI" — all references now consolidate to **Project TigerClaw**
 
 ## Summary
 

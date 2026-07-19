@@ -1,11 +1,17 @@
 ---
 project: STE — Website & Community Launch
-status: Active
-last-updated: 2026-07-16
+status: Active — blocked
+last-updated: 2026-07-19
 members:
   - Ed Hwang
   - Christine Francis
-outcome: Launch smokingtigers.enterprises website with community CTA; establish onboarding flow and membership model
+op_project: https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-website
+op_id: 6
+tier: Network
+objective: Launch STE website with community CTA and defined onboarding flow
+output: Live website, onboarding flow doc, membership model
+deadline: TBD — blocked
+blocker: 3 value props not drafted; Victor must answer 20% allocation question before Brad outreach
 notion: https://app.notion.com/p/quorum1/Smoking-Tigers-Enterprises-Website-3a06f6ac689e80ac8578f99aa3dcca62?source=copy_link
 ---
 

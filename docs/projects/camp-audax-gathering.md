@@ -1,12 +1,18 @@
 ---
 project: Camp Audax / The Gathering
-status: Active
-last-updated: 2026-07-16
+status: Active — blocked
+last-updated: 2026-07-19
 members:
   - Ed Hwang
   - Christine Francis
   - Victor Vorski
-outcome: Secure STE's role as ticket coordinator and group recruiter for Camp Audax at The Gathering (SF satellite + Camp Navarro); produce content artifacts from the event
+op_project: https://ste-business-server.tailebe6d3.ts.net:8080/projects/camp-audax-working-title
+op_id: 11
+tier: Network
+objective: Secure STE as ticket coordinator for Camp Navarro + satellite event at MAB during Tech Week SF October
+output: Signed agreement with Victor/Brad; event plan for October satellite
+deadline: October 2026 (Tech Week SF)
+blocker: Victor must answer 5 questions (20% allocation, STE role, equipment, tickets) before Brad outreach
 notion: https://app.notion.com/p/quorum1/The-Gathering-Camp-Audax-3976f6ac689e8005a6cdd68db6e97786?source=copy_link
 ---
 
