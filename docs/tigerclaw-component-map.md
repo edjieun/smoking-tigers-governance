@@ -95,7 +95,7 @@ tier: All
 | **What** | Browser-based control plane for OpenClaw/TigerClaw — chat, voice, kanban, workspace browser, session monitoring |
 | **Who** | Ed Hwang (primary user) |
 | **Where** | Mac Mini, port 3080, bind 0.0.0.0 (Tailscale accessible) |
-| **Why** | Human-facing operating surface for agents — replaces raw Mattermost for interactive use |
+| **Why** | ⚠️ **DEPRIORITIZED 2026-07-19** — fails silently on Connect. Mattermost `#tigerclaw` is the primary UI. Nerve retained for future investigation. |
 | **How** | Node.js app; connects to OpenClaw gateway (:18789) via WebSocket + gateway token; served to browser |
 | **Config** | `~/nerve/.env` — `GATEWAY_URL`, `GATEWAY_TOKEN`, `HOST=0.0.0.0` |
 | **Boot** | launchctl: `com.nerve.server` |
@@ -145,12 +145,13 @@ tier: All
 ### Mattermost
 | Field | Value |
 |---|---|
-| **What** | Team communication + agent I/O surface |
-| **Who** | Ed Hwang, Christine Francis, Scout agent |
-| **Where** | M1 MacBook, port 8065, `http://ste-business-server.tailebe6d3.ts.net:8065` |
-| **Why** | Scout listens for transcript input; posts extracted tasks, decisions, summaries back to team |
-| **How** | Scout bound to `#transcripts` channel via MM bot token; posts to `#tasks`, `#decisions`, `#agent-logs` |
-| **Channels** | #transcripts (input) · #tasks · #decisions · #agent-logs |
+| **What** | Primary human↔Scout interface — single channel for all input/output |
+| **Who** | Ed Hwang, Christine Francis, Scout-cos bot |
+| **Where** | M1 MacBook, port 8065, `https://ste-business-server.tailebe6d3.ts.net:8065` |
+| **Why** | Scout-cos listens in #tigerclaw; Ed posts transcripts/commands here; Scout responds + creates OP work packages |
+| **How** | Scout-cos bot (MM bot token) is member of #tigerclaw; OpenClaw `chatmode: oncall`, `allowFrom: ["*"]` |
+| **Channels** | **#tigerclaw** (sole active channel — all input and output) |
+| **Removed** | #transcripts (renamed), #tasks, #decisions, #agent-logs — all deleted 2026-07-19 |
 
 ---
 

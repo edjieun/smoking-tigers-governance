@@ -41,12 +41,11 @@ Every component belongs to exactly one tier:
 ```
 Meeting (Zoom / Google Meet / Fathom)
   → Transcript (raw text)
-    → Posted to Mattermost #transcripts
-      → Scout (OpenClaw, Mac Mini) processes automatically
+    → Posted to Mattermost **#tigerclaw**
+      → Scout-cos (OpenClaw, Mac Mini) processes automatically
         → Extracts Tasks → OpenProjects work packages
         → Extracts Decisions → OpenProjects work packages
-        → Posts summary → #transcripts
-        → Notifies team → #tasks + #decisions
+        → Posts results back to **#tigerclaw** with OP#IDs
           → ZeroClaw stores memory (cross-session recall)
 ```
 
@@ -61,7 +60,7 @@ Meeting (Zoom / Google Meet / Fathom)
 | LM Studio | Local inference server | Mac Mini | 1234 |
 | OpenClaw/TigerClaw | Agent harness (Scout) | Mac Mini | 18789 |
 | ZeroClaw | Memory backend | Mac Mini | 42617 |
-| Nerve | Browser UI | Mac Mini | 3080 |
+| Nerve | Browser UI ⚠️ deprioritized | Mac Mini | 3080 |
 | OpenProjects | Work tracking | M1 MacBook | 8080 |
 | Mattermost | Team comms + agent I/O | M1 MacBook | 8065 |
 | LedgerSMB | Financial records | M1 MacBook | 5762 |
@@ -81,14 +80,13 @@ Port map: `docs/port-map.md`
 5. Each item has an OP#ID — click to open in OpenProjects
 
 ### Check on Scout
-- Scout status and errors: Mattermost `#agent-logs`
+- Scout status and errors: posted to `#tigerclaw`
 - Scout config: `~/.openclaw/openclaw.json` on Mac Mini
 - Scout workspace: `~/.openclaw/workspace/` on Mac Mini
 
-### Open Nerve (browser UI)
-1. Navigate to `http://100.104.149.107:3080`
-2. If blank: run `localStorage.removeItem('oc-config'); location.reload()` in Chrome DevTools
-3. Confirm status bar shows `gateway: ok`
+### Open Nerve (browser UI) ⚠️ Deprioritized
+Nerve fails silently on Connect as of 2026-07-19. **Use Mattermost `#tigerclaw` instead.**
+Nerve investigation deferred to a future session.
 
 ---
 

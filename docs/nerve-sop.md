@@ -1,6 +1,6 @@
 ---
 title: SOP — Nerve (OpenClaw Web UI)
-status: Active
+status: Deprioritized — Mattermost #tigerclaw is primary UI
 last-updated: 2026-07-19
 op_task: https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-ai-buildout/work_packages/249
 tier: On Premise
