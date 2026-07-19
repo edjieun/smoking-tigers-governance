@@ -119,6 +119,8 @@ tier: [tier]
 
 ## Step 5 — Create OpenProjects work package
 
+Follow the WP template standard in `docs/sop-work-package-template.md` for all fields.
+
 POST a work package to OpenProjects using the workspace config:
 
 ```
@@ -129,7 +131,7 @@ Content-Type: application/json
 {
   "subject": "DOC: [Component/Decision Name]",
   "description": {
-    "raw": "ADR: [path to ADR file]\nSOP: [path to SOP in gov repo]\nTier: [tier]\nSession: [date]"
+    "raw": "Assignee: Copilot\nDevice: M4 Laptop\nTier: [tier]\nDeadline: [date]\n\n[agent instructions or done criteria]\n\nOutput: [ADR path]\nADR: [path to ADR file]\nSOP: [path to SOP in gov repo]\nSession: [date]"
   },
   "_links": {
     "type": { "href": "{openprojects.url}/api/v3/types/1" }
@@ -140,6 +142,14 @@ Content-Type: application/json
 Return the work package ID and full URL to the user. Every output from this skill must include the OP link.
 
 For each open question identified in Step 2, create a separate Task tagged "open-question".
+
+Agent identity fields to include in description:
+```
+Agent: Copilot
+Harness: VS Code Copilot
+Model: claude-sonnet-4.6
+Device: M4 Laptop
+```
 
 ---
 

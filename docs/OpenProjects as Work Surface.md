@@ -59,3 +59,9 @@ Every work package is tagged with the tier it belongs to:
 - Create WP: `POST /api/v3/projects/12/work_packages`  
 - List WPs: `GET /api/v3/projects/12/work_packages`  
 - Full spec: `docs/openprojects-spec-template.md`
+
+---
+Reference
+
+https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-ai-buildout/work_packages/246/activity
+
