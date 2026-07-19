@@ -91,7 +91,7 @@ openprojects:
 
 | Agent | OP User | ID | Email | API Key env var |
 |---|---|---|---|---|
-| Copilot (this agent) | Copilot Agent | #10 | copilot@quorum.one | `OPENPROJECTS_COPILOT_API_KEY` |
+| Copilot (this agent) | Copilot Agent | #10 | copilot.ste.eh@quorum.one | `OPENPROJECTS_COPILOT_API_KEY` |
 | Scout (Mac Mini) | Ed Hwang (via main key) | #5 | ed@quorum.one | `OPENPROJECTS_API_KEY` |
 
 Copilot must use `OPENPROJECTS_COPILOT_API_KEY` for all OP comments and WP creation.
