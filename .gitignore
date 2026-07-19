@@ -1,0 +1,47 @@
+# ==========================================
+# OpenCode Specific
+# ==========================================
+# Ignore OpenCode's dynamic package/model caches, but do NOT ignore configurations or custom skills
+.opencode/cache/
+
+# ==========================================
+# Secrets & Environment Variables
+# ==========================================
+# Never commit your local credentials or private API keys if you add them later
+.env
+.env.local
+.env.*
+!.env.example
+
+# ==========================================
+# Editor Cruft (VS Code & OS Noise)
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+.opencode
+
+# ==========================================
+# Package Manager / Runtimes (If using Bun/Node plugins)
+# ==========================================
+node_modules/
+.cache/
+.npm/
+
+# ==========================================
+# STE-specific exclusions
+# ==========================================
+# Obsidian internals (keep .obsidian/app.json and .obsidian/plugins as config)
+.obsidian/workspace*
+.obsidian/cache
+
+# Copilot session logs (large, ephemeral — not useful in repo history)
+copilot/copilot-conversations/
+
+# Setup secrets scripts (contain vault commands, not for public repo)
+scripts/setup-secrets.sh
+scripts/recover-credentials.md
