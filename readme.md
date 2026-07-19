@@ -1,156 +1,405 @@
-# Discovery Workspace
+# **Smoking Tigers Governance Repository**
 
-**Owner:** Ed Hwang | **Last updated:** 2026-07-16
-**Part of:** [Smoking Tigers AI](docs/adr/0001-smoking-tigers-ai-domain-model.md) — decentralized AI operations network
+## **Purpose and Operating Model for Local OpenClaw Instances**
 
-This is Ed's personal planning workspace on his local laptop. It is the root node for organizing all active projects, processing meeting transcripts, and building out the Smoking Tigers AI system.
+## **What This Repository Is**
 
----
+This repository is the **governance layer** for Smoking Tigers’ AI-assisted operating system.
 
-## How This Workspace Works
+It is not just a document archive.
 
-```
-Meeting (Fathom / Google Meet / Zoom)
-  → Transcript  →  Transcripts/[Project]/
-    → Chunks    →  chunks/             (chunk-transcript.sh)
-      → Memory Cards → Memory/         (one card per topic)
-        → /Process Memory Card prompt
-          → docs/task-log.md           (tasks + decisions)
-          → docs/open-questions.md     (unresolved questions)
-```
+It is a shared, versioned operating framework that can be used by executive council members (and other authorized operators) to run local OpenClaw instances using a common governance model.
 
-**Key docs:**
-- [`docs/adr/0001-smoking-tigers-ai-domain-model.md`](docs/adr/0001-smoking-tigers-ai-domain-model.md) — canonical domain model and architecture decisions
-- [`docs/glossary.md`](docs/glossary.md) — canonical vocabulary for all agents and docs
-- [`docs/project-registry.md`](docs/project-registry.md) — all active projects with status and blockers
-- [`docs/task-log.md`](docs/task-log.md) — all tasks and decisions extracted from meetings
-- [`docs/open-questions.md`](docs/open-questions.md) — unresolved questions from all meetings
-- [`copilot/copilot-custom-prompts/Process Memory Card.md`](copilot/copilot-custom-prompts/Process%20Memory%20Card.md) — agent prompt for processing new Memory cards into the task log
+Think of this repo as a **governed operating system layer** for local AI operations:
 
-**Governance rules:**
-- Agents are tools, not members. Humans are accountable for agent actions.
-- GitHub commits and LedgerSMB writes require human approval before execution.
-- Projects require member agreement + defined outcome to be in the registry (otherwise they're **topics**).
+* shared policies
+
+* shared procedures
+
+* shared agent behavior standards
+
+* shared tools and automation patterns
+
+* shared templates, skills, and operating conventions
+
+This governance layer helps multiple local machines operate with aligned rules while still allowing local autonomy.
 
 ---
 
-## Active Projects (summary)
+## **What This Repository Is For**
 
-See [`docs/project-registry.md`](docs/project-registry.md) and `docs/projects/` for full detail.
+This repo exists to provide a common foundation for:
 
-| Project | Status | Immediate Blocker / Next Action |
-|---|---|---|
-| [STE Website & Community Launch](docs/projects/STE-website-community.md) | Active | Ed to draft 3 website value props; Christine iterating design |
-| [Camp Audax / The Gathering](docs/projects/camp-audax-gathering.md) | Active — blocked | Victor must answer 5 questions before Brad outreach |
-| [RMA New Meeting Flow](docs/project-registry.md) | Active | Friday: Ed + Sage planning session (new 3-meeting format) |
-| [Smoking Tigers AI Buildout](docs/projects/smoking-tigers-ai-buildout.md) | Phase 2 ✅ | Friday: first full pipeline test with @scout + Ed+Sage transcript |
+* **Governance policies** (authority, approvals, routing, security, decision tracking)
 
----
+* **Operational procedures** (meeting capture, scheduling, staging workflows, logging)
 
-## Workspace Structure
+* **Agent behavior rules** (authority boundaries, escalation rules, no-silent-write standards)
 
-```
-Discovery/
-├── docs/                        ← operational docs (ADRs, glossary, logs)
-│   ├── adr/                     ← architecture decision records
-│   ├── glossary.md
-│   ├── project-registry.md
-│   ├── task-log.md
-│   └── open-questions.md
-├── Memory/                      ← RAG corpus: atomic topic cards from meetings
-├── Transcripts/                 ← raw meeting transcripts (not indexed by RAG)
-├── chunks/                      ← token-safe transcript fragments
-├── scripts/                     ← chunk-transcript.sh and infrastructure scripts
-├── copilot/
-│   └── copilot-custom-prompts/  ← agent prompts (incl. Process Memory Card)
-├── RMA/                         ← RMA project notes
-├── Smoking Tigers Studio/       ← STE project workspace
-└── readme.md                    ← this file
-```
+* **Shared tools and automation patterns** (scripts, Automator workflows, reusable utilities)
+
+* **Shared skills and templates** (repeatable workflows, markdown templates, intake standards)
+
+* **Contribution and improvement workflows** for evolving the governance model over time
+
+It is intended to benefit **all participating local machines** that adopt this governance model.
 
 ---
 
-## About This Workspace
+## **What This Repository Is Not For**
 
-This is Ed's personal planning workspace — the root node of the Smoking Tigers AI network. It runs on the M4 laptop and connects to the Mac Mini (inference + agent executor) and M1 MacBook (OpenProjects) over Tailscale.
+This repo is **not** the primary storage location for:
 
-**What this workspace does:**
-- Organizes all active projects for Ed and the STE team
-- Processes meeting transcripts into structured memory cards
-- Feeds the Mattermost pipeline (transcript → tasks → decisions)
-- Hosts the domain model, glossary, ADRs, and operational docs for the system
+* private local machine state
 
-**Other workspaces that need to be standardized to this structure:**
-- Gathering / Camp Audax workspace
-- Smoking Tigers Enterprises website workspace
-- Media workspace
+* raw personal notes
 
-See `docs/projects/smoking-tigers-ai-buildout.md` for the full system architecture and what's been built.
+* local-only secrets or credentials
 
-# current projects
-- we have processed 5 meeting notes 
-- we bypassed using local ai to work on camp audax/the gathering
-- these need to be organized
-- there are some pre-existing workspaces for things like the 
-	- the gathering/camp audax, 
-	- smoking tigers enterprises website, 
-	- Media
-	- that need to be organized like Discovery, to be usable with smoking tigers ai.
-- these meetings notes have been organized into memory, so the mac mini should be able to do this work using local ai. we need to make sure the mac mini setup is capable of keeping projects updated from the meeting notes.
+* Notion content exports used as working knowledge
 
-# new projects
-we need a discovery processes for the different ways we scope projects
-create a template for a discovery meeting agenda, with the right questions to inject into the conversation to scope what the project is
-- we should come up with an agentic process
-	- once meeting is done, to get the meeting notes and add them to shared memory
-	- we use multiple video conferencing tools and need an SOP for all of them. for example
-	- fathom
-	- google meet
-	- zoom
-- we want to start moving data to the right source of truth
-	- github
-		- gov repo 
-		- agent
-		- code
-		- etc...
-	- on the m1 mac and other shared servers beyond just what is on premise at ed's
-		- openprojects
-			- Agents should be what uses this on behalf of a member
-			- maintains the data logs for the project
-			- tracks meetings
-			- tracks tasks
-			- tracks assignment completion
-			- planning and setting dates and deadlines
-			- keeping members coordinated and well communicated
-			- work with ledgersmb for business operations
-			- track ai token usage by models
-				- public
-				- local
-	- ledgersmb
-		- keep track of costs
-			- openrouter
-				- using public models costs money 
-				- spending needs to be tracked
-	- mattermost
-		- channels need
-	- obsidian
-	- google
-	- notion
-	- etc...
+* private project knowledge bases that should remain local or restricted
 
-# Updates to current projects
-comms were sent in various channels, we should update and plan for next comms and meetings.
-add transcripts and more links and knowledge resources that add more context.
+In general:
 
-I need to start finding and feeding it to the mac mini to process.
+* **Governance \+ operating model assets** belong here
 
-# RMA New Flow
-Sage and I discussed a new flow, a three meeting flow, e.g. mondays are a planning meeting. wed are a recording meeting, fridays is for governance and reviewing what we created and making decisions about it.
+* **Local knowledge \+ project content** stay in local instances / Notion / approved systems of record
 
-we want to present this to the team on the next wednesday meeting, 
-- sage and ed are meeting on Friday to do our first planning for meeting two, where we record it as a podcast
-- i want to create an agenda template that we can follow that allows us to scope the requirements
-- this will create meeting artifacts
-- we want to create the right artifacts that we can use
-- we are going to scheduling a recording session before next wed.
-- 
+---
+
+## **Founding Reference Implementation**
+
+Ed’s local machine is the **founding reference implementation** of this governance model.
+
+This means:
+
+* the initial governance patterns are developed and tested there first
+
+* policies and procedures may originate from Ed’s operating environment
+
+* the repo reflects real operational constraints and tested workflows
+
+This does **not** mean governance is frozen or single-author forever.
+
+Other authorized machines and operators may propose updates and improvements through the governance contribution process.
+
+---
+
+## **Multi-Machine Governance Model**
+
+Executive council members may run their own local OpenClaw instances and use this repo as the shared governance layer for their local systems.
+
+Each participating machine may:
+
+* adopt the governance policies and operating rules in this repo
+
+* use shared tools, templates, skills, and agents defined here
+
+* maintain local knowledge and private data separately
+
+* propose improvements back to the governance repo
+
+This creates a network of locally operated systems with shared governance standards.
+
+### **Design Principle**
+
+**Local execution, shared governance.**
+
+---
+
+## **What Can Be Shared Across Machines**
+
+The following are appropriate to share in this governance repo (subject to review):
+
+### **Governance Artifacts**
+
+* policies
+
+* procedures
+
+* decision record formats
+
+* authority matrices
+
+* review standards
+
+* routing rules
+
+### **Agent and Workflow Assets**
+
+* agent templates / profiles
+
+* behavior constraints
+
+* escalation rules
+
+* jobs templates
+
+* logging standards
+
+* workflow SOPs
+
+### **Tools and Automation**
+
+* scripts
+
+* Automator workflows
+
+* helper utilities
+
+* templates/checklists
+
+* processing standards
+
+* automation library docs
+
+### **Skills / Operating Patterns**
+
+* repeatable prompts
+
+* local-first processing patterns
+
+* staging standards
+
+* contribution checklists
+
+* operational playbooks
+
+---
+
+## **What Should Stay Local (or Restricted)**
+
+The following should generally remain local to each machine or in designated restricted systems:
+
+* local secrets (.env, API keys, tokens, passwords)
+
+* machine-specific credentials
+
+* personal notes and journals (unless intentionally shared)
+
+* private working knowledge from Notion unless explicitly promoted
+
+* local logs containing sensitive data
+
+* machine-specific infrastructure configs that expose security posture
+
+If something could increase security risk, treat it as local/restricted by default.
+
+---
+
+## **Governance Contribution Model**
+
+Other machines are allowed to contribute updates to the governance model.
+
+### **Contribution is Allowed**
+
+Participating operators may propose:
+
+* policy improvements
+
+* workflow updates
+
+* automation tools
+
+* agent templates
+
+* bug fixes to procedures
+
+* clarifications from real-world usage
+
+### **Contribution is Governed**
+
+No contribution becomes official governance simply because it is suggested.
+
+Changes must follow the repo’s governance workflow:
+
+1. Propose change (issue / draft / PR)
+
+2. Review for governance impact
+
+3. Human approval by authorized steward/decision owner
+
+4. Merge and version update
+
+5. Communicate change to participating machines
+
+---
+
+## **Authority and Approval (Important)**
+
+This repository is a governance layer, so authority must remain explicit.
+
+### **Rules**
+
+* No machine or agent may treat a draft as approved policy.
+
+* No policy change is official without human approval.
+
+* Agents may draft and propose, but not self-approve.
+
+* Machines may contribute updates, but not silently overwrite governance.
+
+Use explicit labels such as:
+
+* Draft
+
+* Proposed
+
+* Approved
+
+* Superseded
+
+---
+
+## **Operating Instructions for Participating Machines (Minimum)**
+
+If you want to use this governance repo with a local OpenClaw instance:
+
+### **1\) Clone the Governance Repo Locally**
+
+Keep a local copy on your machine for reference and integration with your local agent workflows.
+
+### **2\) Read Core Governance Files First**
+
+At minimum, review:
+
+* AI resource stewardship / model routing policy
+
+* agent authority matrix
+
+* GitHub decision tracking policy
+
+* relevant workflow SOPs for your role
+
+### **3\) Keep Local Knowledge Separate**
+
+Do not mix local secrets, private notes, or raw Notion knowledge directly into the governance repo.
+
+### **4\) Adopt Shared Conventions**
+
+Use repo standards for:
+
+* file naming
+
+* status labels
+
+* draft vs approved distinctions
+
+* logging and review practices
+
+### **5\) Contribute Improvements Through Review**
+
+If your local machine/workflows reveal better patterns:
+
+* draft the improvement
+
+* explain the operational benefit
+
+* submit for governance review
+
+* do not assume adoption until approved
+
+### **6\) Respect Human Approval Gates**
+
+Agents and automations on local machines must preserve human approval for governance changes and canonical decisions.
+
+---
+
+## **Recommended Repository Structure (High-Level)**
+
+A practical structure for this repo may include:
+
+* policies/ — governance and operating policies
+
+* workflows/ — SOPs and process docs
+
+* agents/ — shared agent templates/profiles/authority docs
+
+* automation/ — scripts, Automator workflows, tooling docs
+
+* templates/ — reusable markdown templates/checklists
+
+* skills/ — shared operational skills/patterns
+
+* decisions/ — approved governance decision records
+
+* indexes/ — indexes and change summaries
+
+(Exact structure can evolve through governance.)
+
+---
+
+## **Versioning and Change Management**
+
+Because multiple machines may depend on this repo:
+
+* use versioned changes
+
+* preserve change history
+
+* avoid silent breaking changes
+
+* document migration notes when workflows materially change
+
+Participating machines should be able to understand:
+
+* what changed
+
+* why it changed
+
+* what local updates are required (if any)
+
+---
+
+## **Shared Benefit of This Model**
+
+This governance repo allows the executive council to build an AI-assisted operating system that is:
+
+* **local-first**
+
+* **governed**
+
+* **versioned**
+
+* **collaborative**
+
+* **improvable**
+
+* **not dependent on one machine’s memory**
+
+Each participating machine strengthens the governance model when improvements are contributed through the proper process.
+
+---
+
+## **Founding Steward Note**
+
+This governance model began on Ed’s machine as the founding reference implementation.
+
+It is intended to evolve through disciplined contribution by trusted operators and machines under shared governance.
+
+The goal is not centralized control of all local systems.
+
+The goal is **shared operational integrity across local systems**.
+
+---
+
+## **Immediate Next Step (Recommended)**
+
+Create a short onboarding file for participating machines, for example:
+
+* ONBOARDING-LOCAL-MACHINE.md
+
+This should include:
+
+* prerequisites
+
+* clone/setup steps
+
+* required core docs to read
+
+* what stays local vs shared
+
+* contribution workflow
+
+* security reminders
