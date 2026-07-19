@@ -1,0 +1,32 @@
+- **2026-04-13:** The Discord channel `#exec-christine` is established as Christine's 1:1 working channel for all projects.
+- **2026-04-13:** Aesthetic direction for the ST:AI landing page is defined as "dark, smoky, and considered — evoking the atmosphere of a Meiji-era private room or a London members club".
+- **2026-04-13:** A content governance rule is established for the ST:AI landing page: "Avoid contrastive constructions (not X, but Y patterns)" and "state things directly".
+- **2026-04-07:** The Google Drive was reorganized with a new folder structure and a standardized file naming convention (`YYYY-MM-DD_ProjectCode_Description_vN`). An SOP was updated to reflect this.
+- **2026-04-07:** A central NotebookLM notebook was established as the primary knowledge base for all weekly meetings, and the "Scheduling & Calendar SOP" was updated accordingly.
+- **2026-04-07:** The weekly executive sync meeting was officially moved to Wednesdays at 4 PM Pacific.
+- **2026-04-07:** A daily cron job was created to generate and deliver a "Morning Report" summarizing Notion and Discord activity to Ed's DM at 8:00 AM Pacific.
+- **2026-04-07:** A new policy was established for agents to reply within threads in group chats to keep conversations organized.
+- **2026-04-07:** Stuart Pace (`@stupac4633`) was added to the Smoking Tigers Directory in Notion as a Contributor (Video Production).
+- **2026-04-07:** New private forum channels (`#general-discussion`, `#executive-agenda-discussion`) were created in Discord for team communication.
+- **2026-03-24:** The `ea` agent's Notion and Google Workspace integrations were configured and validated. Access to the `#exec-ed` Discord channel (ID `1485720133031825529`) was established. A pending OpenClaw gateway configuration change was identified to finalize Discord channel routing.
+- **2026-03-24:** Memory governance overhaul — 3 decisions approved and committed to ST Gov repo (DEC-20260324-001/002/003). Memory compaction activated, agent memory tiers defined, canonical source registry established. Private memory dirs created for ea, sysops, christine-ea. Post-change audit appended to Google Doc. Notion project updated.
+- **2026-03-22:** Discord EA agent plan finalized. DM-only mode. Guild ID: 954777270428504145. Agents: christine-ea (exists as Rosie), van-ea + basil-ea to create. Shared Notion token to start. Waiting on Discord bot tokens from Ed.
+- **2026-03-22:** Stuart onboarded as editor for Jimmy Ren Reacts. YouTube Edit Production Guide published in Notion (CapCut, 3-layer timeline, compliance cutting workflow). Source files in shared Google Drive.
+- **2026-03-22:** STAIgents meeting architecture doc added to ExecDB. 5-agent stack (EA, Scheduling, Agenda, Notes, Follow-Through). Next step: OpenClaw-ready stack doc.
+- **2026-03-22:** Jajan Grant deadline March 31. Application in progress. Ed needs to call Nick Way Flores (Thu/Fri).
+- **2026-03-23:** All 5 Critical TLN tasks completed: Nick call scheduled, content format table built, morning intake read, Basil notes gathered, Ed+Basil+Nick call scheduled. Nick cluster cleared.
+- **2026-03-22:** TLN (Trade Like Nick) is highest-priority active project. 🔴 Critical: Ed+Basil to schedule call with Nick Pham, Robert's Figma mood board, Basil locking @tradelikenick handles + Google Workspace setup.
+- **2026-03-16:** David Hodgson added as a new contact in relation to a project review with Ed.
+- **2026-03-13:** Established Eva (EA) agent's Notion home as the "Executive Assistant" page within the "ST:AI Ops" database.
+- **2026-03-13:** Memory architecture upgraded to multi-agent pipeline. knowledge-ops now digests all agent sessions nightly (ea, sysops, governance-ops, sergeant-at-arms, knowledge-ops, main). Shared memory layer created at memory/shared.md — all agents read at session start. Open item deduplication added to digest. Notion token/email noise resolved and closed.
+- **2026-03-13:** Google Drive + Calendar access confirmed active. Service account `stai-eva-agent@smoking-tigers-agents.iam.gserviceaccount.com` (project: `smoking-tigers-agents`). Drive: STM folder read/write. Calendar: STM Operations (read/write) + Q1 Workspace (read-only, pending Esteban DWD grant). Credentials at `~/.openclaw/credentials/`. Auth wired into EA + christine-ea workspaces.
+- **2026-03-09:** Captured weekend work (Doug/sysops) into memory: Cal.com build attempts, Colima memory increase to 12GB, exec access via Tailscale.
+- **2026-03-08:** Cal.com and Mattermost confirmed healthy via Tailscale. Exec access deadline (3 PM) set — Tailscale invites to Basil/Van/Christine still pending.
+- **2026-03-07:** Colima memory increased 8→12GB. Doug (sysops) attempted Cal.com source rebuild — failed (exit 1, turbo.json issue). Build from source is the correct approach (v6.2.0, node:20-alpine, NODE_OPTIONS=8192).
+- **2026-03-06:** AI agent org chart drafted (`docs/ai-agent-org-chart.md`). Exec Tailscale/Mattermost onboarding guide drafted (`docs/exec-onboarding-tailscale-mattermost.md`). Cal.com fix held pending migration decision. Ben = Van confirmed.
+- **2026-03-03:** Established the daily memory digest pipeline using a pre-processing script to prevent model stalls on raw JSONL files.
+- **2026-03-03:** Audited and standardized all primary agent workspaces (knowledge-ops, gov-ops, saa, ea, sysops).
+- **2026-03-03:** Configured Mattermost channels and agent bindings for executive team coordination.
+- **2026-03-02:** Switched all primary agents (except knowledge-ops) to Claude Sonnet 4.6 and knowledge-ops to Gemini 2.5 Pro.
+- **2026-03-02:** Fixed Mattermost DM policy to `open` to allow direct messages to all bots on the private server.
+- **2026-02-23:** Initial governance decisions (DEC-001 to DEC-016) were approved and documented.

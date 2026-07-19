@@ -1,0 +1,26 @@
+
+{
+  "_comment": "Agent definition templates for STE governance agents. Paths are machine-local — replace {OPENCLAW_ROOT} with your local openclaw path (e.g. ~/.openclaw or /Volumes/<name>/.openclaw). Model choices are recommendations; adapt to what is installed on your machine.",
+  "agents": [
+    {
+      "id": "sysops",
+      "name": "System Operations",
+      "workspace": "{OPENCLAW_ROOT}/workspace/sysops",
+      "agentDir": "{OPENCLAW_ROOT}/workspace/agents/sysops",
+      "model": {
+        "primary": "ollama/qwen2.5:14b-instruct",
+        "fallbacks": ["openrouter/anthropic/claude-sonnet-4-6"]
+      }
+    },
+    {
+      "id": "ea",
+      "name": "Executive Assistant",
+      "workspace": "{OPENCLAW_ROOT}/workspace/ea",
+      "agentDir": "{OPENCLAW_ROOT}/workspace/agents/ea",
+      "model": {
+        "primary": "ollama/qwen2.5:7b-instruct",
+        "fallbacks": ["openrouter/anthropic/claude-sonnet-4-6"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Founding Member — Ed's Mac mini
+# This is the reference implementation machine for the STE governance model.
+
+device_id: eds-mac-mini
+operator: edjieun
+trust_level: owner
+local_governance_path: ~/SmokingTigers/governance
+local_openclaw_path: /Volumes/edhwang/.openclaw
+agents:
+  - id: main
+    name: Scout
+  - id: pmp-team
+    name: PMP Team
+  - id: maven
+    name: Maven
+mattermost_notify: "#sysops"
+notes: >
+  Founding reference implementation. Mac mini M4 on Tailscale
+  (eds-mac-mini.tailebe6d3.ts.net). Runs OpenClaw on an external volume.
+  gh CLI authenticated as edjieun. Primary governance steward machine.
+joined: 2026-06-22
