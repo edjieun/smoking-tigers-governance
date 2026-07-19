@@ -86,7 +86,10 @@ curl -s http://127.0.0.1:3080/health
 | Issue | Status | Fix |
 |---|---|---|
 | Browser shows blank / won't connect | ⚠️ Common after config changes | `localStorage.removeItem('oc-config')` in DevTools |
-| `gateway: error` in status bar | Config points to wrong gateway | Check `GATEWAY_URL` env var — must be `:18789`, not `:42617` (ZeroClaw) |
+| `gateway: error` in status bar | Config points to wrong gateway | Check `GATEWAY_URL` env var — must be `http://127.0.0.1:18789` (loopback to OpenClaw) |
+| Browser shows `ws://127.0.0.1:18789/ws` | Stale localStorage | Run `localStorage.removeItem('oc-config'); location.reload()` in DevTools |
+| `WebSocket error — check URL` pointing at `:18789` | OpenClaw only binds loopback; browser can't reach it directly | Architecture: browser → Nerve WS proxy (`/ws` on port 3080) → OpenClaw. `PUBLIC_GATEWAY_WS_URL` in .env must be `ws://100.104.149.107:3080/ws` |
+| `403 Forbidden` on WS upgrade | Origin not in allowed list | Add `ALLOWED_ORIGINS=http://100.104.149.107:3080,http://192.168.1.253:3080` to `~/nerve/.env`, restart |
 | Kanban capability scope | ⏳ Not yet fully tested | See [OP #256](https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-ai-buildout/work_packages/256) — blocked on browser access |
 
 ---
