@@ -1,7 +1,7 @@
 ---
 project: Smoking Tigers AI Buildout
-status: Active — Phase 2 in progress (TigerClaw rebuild)
-last-updated: 2026-07-18
+status: Active — Phase 3 in progress (pipeline verified)
+last-updated: 2026-07-19
 members: [Ed Hwang]
 outcome: TigerClaw (lean local fork) running on Mac Mini with ZeroClaw memory system; multi-source input pipeline via Nerve kanban in progress
 ---
@@ -142,15 +142,22 @@ Meeting (Fathom / Meet / Zoom)
 - [x] ZeroClaw config.toml written: SQLite memory, nomic-embed, hybrid search, Tailscale tunnel
 - [x] OpenRouter balance: $57.06 (down from $58.77 at session start — ~$1.71 spent today)
 
-**Remaining Phase 2:**
-- [ ] Complete ZeroClaw agent setup via `zerocode` TUI on Mini directly (requires interactive terminal)
-- [ ] Install Nerve on Mini + configure Tailscale access mode
-- [ ] Install `mcp-crawl4ai-ts` + `mcp-searxng` as MCPs on Mini
-- [ ] Design 4 Nerve kanban lanes: `transcript`, `email`, `url/web`, `message-forward`
+**Phase 3 — Pipeline Verified (2026-07-19) ✅**
+- [x] Scout ↔ Mattermost reconnected (was broken by TigerClaw rebuild)
+- [x] Nerve fixed: gateway URL corrected to OpenClaw :18789 (was pointing at ZeroClaw :42617)
+- [x] Full pipeline verified: transcript posted → Scout extracted tasks to #tasks, decisions to #decisions
+- [x] memorySearch provider fixed (lmstudio-mini → lmstudio)
+- [x] Nerve health: gateway:ok
+
+**Definition of done achieved:**
+> A meeting happens → transcript goes in → tasks show up in the right people's inboxes automatically. ✅
+
+**Remaining:**
+- [ ] Nerve browser: `localStorage.removeItem('oc-config')` in Chrome DevTools (clears stale gateway URL)
 - [ ] Configure ZeroClaw email channel: IMAP `ed@quorum.one`
-- [x] Deactivate `mavin` + `pmp-team` MM bots — deactivated via API 2026-07-18
-- [ ] ⚠️ Rotate `edlicious` MM admin password (was exposed in Copilot chat session)
-- [ ] Send Christine her MM login
+- [ ] Van + Basil MM onboarding (pending their readiness)
+- [ ] ZeroClaw memory → wire into OpenClaw pipeline (cross-session recall)
+- [ ] ⚠️ Rotate `edlicious` MM admin password
 
 ### Deferred
 - OpenProjects spec template for transcript processing (Task #15)
