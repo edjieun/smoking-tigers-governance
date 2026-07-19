@@ -17,7 +17,10 @@ owner: Ed Hwang
 ## Mac Mini (edlicious-server)
 
 **Tailscale IP:** `100.104.149.107`
-**LAN IP:** `192.168.1.253` ⚠️ DHCP — reserve this in Linksys router to prevent drift
+**LAN IP:** `192.168.1.253` ⚠️ DHCP — reservation pending (see [OP #277](https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-ai-buildout/work_packages/277))
+**Wi-Fi MAC (en1 — active):** `d6:a1:92:42:bb:ff`
+**Ethernet MAC (en0 — unused):** `d0:11:e5:e6:89:05`
+**Router:** Linksys MR5500 — admin at `http://192.168.1.1`
 
 | Service | Port | Bind | Tailscale Exposed | Tier |
 |---|---|---|---|---|
@@ -57,7 +60,7 @@ No current conflicts. All three services share the hostname, differentiated by p
 
 | Risk | Status | Action |
 |---|---|---|
-| Mac Mini LAN IP drift (DHCP) | ⚠️ Open | Reserve `192.168.1.253` in Linksys router |
+| Mac Mini LAN IP drift (DHCP) | ⏳ [OP #277](https://ste-business-server.tailebe6d3.ts.net:8080/projects/ste-ai-buildout/work_packages/277) | Ed: open http://192.168.1.1 → DHCP Reservations → add MAC `d6:a1:92:42:bb:ff` → `192.168.1.253` |
 | ZeroClaw loopback — Scout (OpenClaw) can't reach it | ⚠️ Open | Resolve in ADR-0003 |
 | New service on ste-business-server near 8080/8065/5762 | ⚠️ Watch | Check this doc first |
 | OpenClaw :18789 loopback — not directly browser-accessible | ✅ By design | Nerve connects via gateway token over WS |
