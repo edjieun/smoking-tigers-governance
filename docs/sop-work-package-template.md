@@ -119,3 +119,17 @@ Always set "Blocks" and "Blocked by" — do not leave the dependency implicit in
 - Every real meeting that occurred gets a Milestone WP (type 2) in OP
 - Transcripts attach to the Milestone WP as child Tasks
 - Meeting WP naming: `MEETING: [Topic] — [YYYY-MM-DD]`
+
+---
+
+## Incremental / Long-Running Tasks
+
+Some tasks (e.g., writing a manual, building a doc incrementally) are ongoing by nature. Rules:
+
+- The **parent WP** tracks the overall objective (e.g., "Write TigerClaw Manual") — stays **In Progress** until the full artifact is complete
+- Each **addition or section** gets its own child WP with:
+  - A specific title (e.g., `TigerClaw Manual — Add: Mattermost pipeline section`)
+  - A single defined endpoint (e.g., "Section written and pushed to GitHub")
+  - Status set to **Closed** only when the output exists and is verifiable
+- Do NOT mark the parent Done until the full output is created, reviewed, and committed
+- Agent rule: attach the GitHub link or file path in the completion comment before closing
