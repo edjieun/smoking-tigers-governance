@@ -13,3 +13,7 @@
 ## Untitled Conversation
 **Time:** 2026-07-14 22:05
 **Summary:** Summary generation failed
+
+## Smoking Tigers Mission and Goals
+**Time:** 2026-07-21 09:13
+**Summary:** The script discusses the mission of Smoking Tigers, which aims to create a central voice and consistent broadcast channel for regenerative media. It highlights current challenges and potential collaborations within the regenerative economy.

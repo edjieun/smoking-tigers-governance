@@ -1,7 +1,7 @@
 ---
 project: STE — Website & Community Launch
-status: Active — blocked
-last-updated: 2026-07-19
+status: Active — In Progress (value props)
+last-updated: 2026-07-20
 members:
   - Ed Hwang
   - Christine Francis
@@ -10,90 +10,144 @@ op_id: 6
 tier: Network
 objective: Launch STE website with community CTA and defined onboarding flow
 output: Live website, onboarding flow doc, membership model
-deadline: TBD — blocked
-blocker: 3 value props not drafted; Victor must answer 20% allocation question before Brad outreach
+deadline: TBD — blocked on 3 value props
 notion: https://app.notion.com/p/quorum1/Smoking-Tigers-Enterprises-Website-3a06f6ac689e80ac8578f99aa3dcca62?source=copy_link
 ---
 
-# STE — Website & Community Launch
+# PRD — STE Website & Community Launch
 
-## Summary
-
-Smoking Tigers Enterprises (STE) is building a website and community to serve as an **intelligent connector** between SMB owners/teams who are stuck on AI adoption and a cooperative trust network of real practitioners. The positioning is "human-first AI ops" — not selling tools, but solving the last 10–20% of AI adoption that requires trusted human expertise.
-
-The community is modeled as a cooperative (not a VC-backed product), with modular discovery-led onboarding, and a paid service layer (employee upskilling, consulting) built on top.
-
----
-
-## Core Positioning (decided)
-
-| Element              | Decision                                                                                               |
-| -------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Brand frame**      | "Future of work" publicly — solar punk ethos, not the label                                            |
-| **Target audience**  | Established SMBs (with staff or solo operators) — "you've done everything right, now what?"            |
-| **Core problem**     | "Getting over the last 10% of AI isn't an AI problem — it's a human problem. You need trusted humans." |
-| **Differentiator**   | Cooperative trust network (not solo consultant, not enterprise vendor)                                 |
-| **Community role**   | Cooperative framing is real but NOT the front message — it's in secondary copy                         |
-| **Onboarding model** | Modular, discovery-led — NOT a 6-week fixed program                                                    |
-| **Initial ask**      | Contribute a short video or idea (not a fee) to join                                                   |
-| **Revenue stream**   | Employee upskilling/training add-on (~$500/employee), separate from community membership               |
+**Product:** smokingtigers.enterprises  
+**Project:** STE Website & Community (OP #6)  
+**Owners:** Ed Hwang (copy), Christine Francis (design)  
+**Status:** In Progress — blocked on 3 value props (OP#265)  
+**Last Updated:** 2026-07-20
 
 ---
 
-## Website Structure (decided)
+## 1. Problem Statement
 
-- **Hero section:** ~60-second video (problem → solution → community CTA, Solaris-style)
-- **Copy roadmap:** Problem → Solution → Community CTA (Solaris video as reference)
-- **Visual direction:** Light/bright, warm gradient palette — not dark, not pink-dominant. No clown themes.
-- **Ed owns copy; Christine owns design**
-- **Two separate ~1-minute videos planned:** one for clients/SMBs, one for AIOps practitioners
+People and organizations that want to do more with AI are isolated. They've adopted tools, attended webinars, and hired consultants — but they're still stuck. The last 10–20% of AI adoption doesn't come from better software. It comes from trusted humans who've been there and can show the way.
 
-### Three value props (Ed to draft):
-1. [Bottleneck framing — "stop trying to do this alone"]
-2. [Solution — the trust network / practitioner community]
-3. [Community CTA — what you get when you join]
+> "Getting over the last 10% of AI isn't an AI problem — it's a human problem. You need trusted humans." — Ed Hwang
+
+There is no scalable, community-owned trust network for this. Yet.
 
 ---
 
-## AI Ops Consortium (decided)
+## 2. Solution
 
-- Target 5–8 AI Ops companies (PandaBlocks + 4–5 others Christine is researching)
-- STE = interface/marketplace between clients and these companies
-- STE funnels leads; takes referral commission
-- YouTube ad revenue split: STE keeps 80–90%; partners get branding and links
-- Two offers:
-  1. **For clients:** work with vetted AI Ops companies (affiliate + media)
-  2. **For individuals:** "set up your own consultancy" via ARC community
+Smoking Tigers Enterprises is a **cooperative trust network and media platform** — an intelligent connector between communities stuck on AI and the practitioners who've solved these problems. It is not a vendor, not a SaaS product, and not a solo consultancy.
 
-### Atomic Jobs Board
-- Confirmed as the long-term mechanism for the AI Ops community
-- **NOT** pitched in partner outreach — internal/future feature only
+It is **community-first**. The primary value is belonging to a network of people doing this together.
 
 ---
 
-## IP Tracking & Idea Board (decided)
+## 3. Community Segments
 
-- Community idea board: posting an idea = accepting that contributors get equity; original poster retains ~10% creator's fee
-- **Entire.io** is the target platform for IP process capture (records how agents work, not just output)
-- **Spec coding over vibe coding** is the community's stated technical value — also a video/content topic
-- **Agent monetization:** service-based (help you build it), not product-based (sell the agent file)
-- **Stack:** Rev Tokens + Hypha smart contracts for IP equity tracking (deferred — currently spreadsheets)
+STE serves four distinct community segments, each with their own onboarding path and value proposition:
+
+| Segment | Who they are | Core need |
+|---|---|---|
+| **Solopreneurs** | Independent operators, freelancers, consultants | Build trust, build leads, build your own AI-powered practice |
+| **SMBs** | Small/medium businesses with staff | Unblock AI adoption; stop hiring one-off consultants that don't stick |
+| **Nonprofits** | Mission-driven orgs with limited budget | Access to AI Ops expertise without enterprise pricing |
+| **Impact Ventures** | Regenerative / "for the greater good" companies | Practitioners who share their values and can help move fast |
 
 ---
 
-## Content Strategy
+## 4. Media Side
 
-- Shared YouTube channel concept valid as a regenerative economics project (not an investor pitch)
-- Three audience segments to address separately:
-  1. Vision/investor-level communities (SolarPunks, ARC, RMA)
+STE is also a **media platform**. Media is not secondary — it is the engine that attracts, qualifies, and retains all four community segments.
+
+- **Media as marketing:** Podcasts, YouTube, event recordings → shorts → community assets
+- **Three content audience segments:**
+  1. Vision/investor communities (SolarPunks, ARC, RMA)
   2. Content creators ready to level up (500K–1M subscriber range)
-  3. General community/consultants at any stage
-- Every event must produce **content artifacts** — recordings, written summaries, media
-- "Events that leave no trace" are not acceptable (Ed's rule)
+  3. General consultants / community members at any stage
+- Every event must produce content artifacts — "events that leave no trace are not acceptable" (Ed's rule)
+- YouTube channel activation plan: first 3 topics, upload cadence (OP#287)
+- **Two planned ~60-second hero videos:** one for SMB clients, one for AIOps practitioners
 
 ---
 
-## Stakeholder Map
+## 5. Core Value Props (Copy TBD — OP#265)
+
+1. **Bottleneck** — "Stop trying to do this alone and stop bleeding money on one-off consultants."
+2. **Solution** — A cooperative trust network: real practitioners, real results, modular help for your actual needs.
+3. **Community CTA** — Join by contributing (a short video, an idea) — not by paying a fee.
+
+---
+
+## 6. Website Structure
+
+| Section | Content |
+|---|---|
+| Hero | ~60-second video: problem → solution → community CTA (Solaris-style) |
+| Value Prop 1 | Bottleneck framing |
+| Value Prop 2 | Solution: the trust network |
+| Value Prop 3 | Community CTA + first action |
+
+**Visual direction:** Light/bright, warm gradient palette. Not dark mode. Not pink-dominant. No clown themes.  
+**Video approach:** AI-generated headless video first (Solaris reference); later replaced with real STE members.  
+**Ed owns copy; Christine owns design.**
+
+---
+
+## 7. Community Model
+
+- **Cooperative framing** — real differentiator, but NOT the front message (secondary copy)
+- **Onboarding:** Modular and discovery-led — "we figure out A, B, C vs. A, D based on your needs." NOT a 6-week fixed program.
+- **Initial membership ask:** Contribute a short video or idea (not a fee)
+- **Revenue stream:** Employee upskilling/training add-on (~$500/person), separate from membership
+- **Engagement model:** Efficient, not social-media-style scrolling — business owners don't have time to browse
+
+---
+
+## 8. AI Ops Consortium
+
+- Target 5–8 AI Ops companies (PandaBlocks as anchor partner)
+- STE = marketplace interface; takes ~10% affiliate referral commission on leads
+- YouTube ad revenue: STE keeps 80–90%; partners get branding/links
+- **Two offers:**
+  1. For clients — vetted AI Ops companies (affiliate + media model)
+  2. For practitioners — ARC community ("set up your own consultancy")
+
+---
+
+## 9. Technical & Domain
+
+| Detail | Value |
+|---|---|
+| Primary domain | smokingtigers.enterprises |
+| Also owned | smokingtigers.media, smokingtigers.org |
+| Hosting | Five (GitHub-based) |
+| GitHub | Ed + Christine (both have write access as of June 23) |
+| File storage | Google Drive (moving off local machine) |
+
+---
+
+## 10. Positioning
+
+| Element | Decision |
+|---|---|
+| **Brand frame** | "Future of work" publicly — solar punk ethos, not the label |
+| **Differentiator** | Cooperative trust network (not solo consultant, not enterprise vendor) |
+| **Community ownership** | Real but NOT the front message — secondary/supporting copy |
+| **For the greater good** | Approved key phrase (not "AI for good" — too generic; not "altruistic" — too nonprofit) |
+
+---
+
+## 11. Open Blockers (2026-07-20)
+
+| OP# | Blocker | Owner |
+|---|---|---|
+| OP#265 ⭐ | Draft 3 value props — unblocks hero copy and everything downstream | Ed |
+| OP#266 | Define onboarding flow (first action after CTA click) | Ed + Christine |
+| OP#285 | Identify 5–8 AI Ops consortium partners | Christine |
+
+---
+
+## 12. Stakeholder Map
 
 | Person | Role | Status | Next action |
 |---|---|---|---|
@@ -108,25 +162,39 @@ The community is modeled as a cooperative (not a VC-backed product), with modula
 
 ---
 
-## Open Questions (from memory)
+## 13. Active Work Packages (as of 2026-07-20)
 
-- What is the exact three-sentence problem statement for the hero copy? (Ed to draft)
-- Should the community be branded "ARC Guild," "Build Club," or something else?
-- Who is the precise target audience persona — solo consultant, SMB owner with employees, or both?
-- What is the exact onboarding flow after clicking the CTA? (Discord invite? Calendar link? Notion page?)
-- What qualifies as a valid content contribution for initial membership?
-- Should the first hero video be AI-generated (headless, Solaris-style) or feature real STE members?
-- What are the exact three sub-sections below the hero video?
-- When is Entire.io available for integration?
-- What are the joint-venture terms for the idea board? (Simple language version needed)
+| Priority | OP# | Subject | Status | Owner |
+|---|---|---|---|---|
+| 🔥 #1 BLOCKER | [OP#265](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/265) | Draft 3 value props (bottleneck → solution → CTA) | **In Progress** | Ed |
+| HIGH | [OP#266](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/266) | Define onboarding flow: first action after CTA click | New | Both |
+| HIGH | [OP#285](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/285) | Research 5-8 AI Ops consortium partners | New | Christine |
+| HIGH | [OP#286](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/286) | One-pager: Witzel / Hodgson / Bobby Fishkin | New | Christine |
+| HIGH | [OP#205](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/205) | Write hero section copy (blocked on OP#265) | New | Ed |
+| MED | [OP#287](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/287) | Activate STE YouTube channel | New | Ed |
+| MED | [OP#284](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/284) | Source hero content: Camp Audax + AI Ops | New | Both |
+| MED | [OP#207](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/207) | Lead-gen strategy: media-as-marketing + YouTube | New | Both |
+| MED | [OP#220](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/220) | Identify 2-3 seed projects for community board | New | Both |
+| ⏸ | [OP#222](https://ste-business-server.tailebe6d3.ts.net:8080/work_packages/222) | JV terms for idea board | On Hold | Ed |
 
 ---
 
-## Source Memory Cards
+## 14. Open Questions
+
+- Should the community be branded "ARC Guild," "Build Club," or something else?
+- Should the first hero video be AI-generated (headless, Solaris-style) or feature real STE members?
+- What are the exact three sub-sections below the hero video?
+- What is the exact onboarding flow after someone clicks the CTA? (Discord invite? Calendar link?)
+- When is Entire.io available for IP process capture integration?
+
+---
+
+## 15. Source Memory Cards
 
 | Date | Topic | Card |
 |---|---|---|
 | 2026-07-06 | Content strategy + brand | `Memory/STE - 2026-07-06 - Content Strategy and Brand Positioning.md` |
+| 2026-07-06 | Website + tooling issues | `Memory/STE - 2026-07-06 - Website and Tooling Issues.md` |
 | 2026-07-07 | One-pager strategy + outreach | `Memory/STE - 2026-07-07 - One-Pager Strategy and Outreach Plan.md` |
 | 2026-07-08 | AI Ops consortium + revenue | `Memory/STE - 2026-07-08 - AI Ops Consortium and Revenue Model.md` |
 | 2026-07-08 | One-pager review + terminology | `Memory/STE - 2026-07-08 - One-Pager Review and Terminology.md` |

@@ -104,19 +104,20 @@ Victor's framing: _"Future of work — sure, if somebody can carry that."_
 
 ## Key Stakeholders
 
-| Person | Role | Status |
-|---|---|---|
-| Victor Vorski | Camp Audax lead / Q1 connector / The Gathering liaison | Active — needs to answer 5 questions |
-| Brad Nye | The Gathering founder | Pending — no direct contact yet |
-| David Hodgson | Potential investor introducer | Warm — Victor confirmed interest |
-| Bobby Fishkin | The MAB / SolarPunkification network | Confirmed connection via Victor |
-| Andres | The MAB co-steward | Confirmed connection via Victor |
-| David Witzel | Purpose-driven leader / GRC | One-pager outreach planned |
-| Henry Kim (PandaBlocks) | KOTRA bridge / affiliate partner | Exploring |
-| KOTRA | Primary sponsorship target | Uncontacted |
-| Zach (Frogakuda / ARC) | Group recruitment | 1:1 being scheduled |
-| Murdoch | Group recruitment | Christine to DM on Discord |
-| Brandon | Group recruitment | Group call week of July 21 |
+| Person | Role | Contact | Comms Status |
+|---|---|---|---|
+| Victor Vorski | Camp Audax lead / Q1 connector / The Gathering liaison | Telegram (active in thread) | ⏳ Awaiting answers to 5 blocker questions (OP#223) |
+| Brad Nye | The Gathering founder | brad@bradnye.com · WhatsApp | ⚠️ Badge deadline Monday 2026-07-21 — needs logo, 50-word description, URL |
+| Christine Francis | STE co-lead / design / outreach | Telegram · Discord | ✅ Replied to Brad's media email; active in Telegram thread |
+| David Hodgson | Potential investor introducer | Via Victor | 👀 Warm — Victor confirmed interest; not yet contacted directly |
+| Bobby Fishkin | The MAB / SolarPunkification network | Via Victor | 👀 Confirmed connection via Victor |
+| Andres | The MAB co-steward | Via Victor | 👀 Confirmed connection via Victor |
+| David Witzel | Purpose-driven leader / GRC | TBD | One-pager outreach planned (not started) |
+| Henry Kim (PandaBlocks) | KOTRA bridge / affiliate partner | Via PandaBlocks | Exploring |
+| KOTRA | Primary sponsorship target | Via Henry Kim / Ed's Korean contacts | Uncontacted |
+| Zach (Frogakuda / ARC) | Group recruitment | Signal | ⏳ 1:1 scheduling in progress (OP#270) |
+| Murdoch | Group recruitment | Discord | ⏳ Christine to DM (OP#226) |
+| Brandon | Group recruitment | TBD | ⏳ Group call week of July 21 (OP#269) |
 
 ---
 
