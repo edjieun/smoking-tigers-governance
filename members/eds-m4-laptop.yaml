@@ -1,0 +1,37 @@
+# Member Enrollment — Ed's M4 Laptop (on-device workstation)
+
+device_id: eds-m4-laptop
+did: ste-did-002
+operator: edjieun
+trust_level: owner
+tier: on-device
+enrolled: 2026-07-28
+
+local_governance_path: ~/SmokingTigers/governance
+local_openclaw_path: ~  # Not running OpenClaw on this machine
+
+workspace:
+  discovery: ~/Library/CloudStorage/GoogleDrive-ed.hwang@quorum.one/Shared drives/q1 Creative/Smoking Tigers/11 - Projects/TigerClaws/Discovery
+  obsidian_vault: same as discovery  # Obsidian opens the Discovery workspace folder directly
+
+agents:
+  - id: copilot
+    name: GitHub Copilot (VS Code)
+
+tools:
+  - VS Code + GitHub Copilot
+  - Obsidian
+  - LM Studio (local inference, loopback only, port 1234)
+
+lm_studio:
+  enabled: true
+  port: 1234
+  network_exposed: false  # Personal use only — not accessible via Tailscale
+
+mattermost_notify: ""  # On-device machine; notifications handled by Mac Mini
+
+notes: >
+  On-device workstation. Discovery workspace synced via Google Drive for Desktop
+  (Shared Drive → local storage). Obsidian opens this folder directly.
+  git and .obsidian config are both present in the workspace root.
+  LM Studio runs loopback-only for personal inference experiments.

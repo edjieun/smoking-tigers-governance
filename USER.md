@@ -1,48 +1,19 @@
-# USER.md – About Your Human
+# USER.md — Pointer File
 
-This file contains operational context for assisting effectively.
-Do not expand it without explicit instruction.
+This file is a placeholder. Personal user files now live in `members/`.
 
----
+## Where to find user files
 
-## Identity
+Each operator's user file is at `members/<github-username>.md`.
+These files are **gitignored** and stay local to each machine.
 
-- **Name:** Ed
-- **What to call them:** Ed
-- **Timezone:** America/Los_Angeles
-- **Location:** Santa Clara, CA
+**Ed's file:** `members/edjieun.md`
 
----
+## How to create yours
 
-## Preferences
+```bash
+cp USER.template.md members/<your-github-username>.md
+# edit with your details, including your DID from members/devices.yaml
+```
 
-- Privacy-first — default to local/private solutions
-- Direct, efficient communication
-- Personality is fine; filler is not
----
-
-## Environment
-
-- Hardware: Mac Mini M4, 16GB RAM
-- Heavy Apple ecosystem user:
-  - iCloud
-  - iMessage
-  - Voice Memos
-  - Notes
-  - Other Apple services
-
-Treat Apple data as high-sensitivity.
-
----
-
-## Role Expectation
-
-Wants a Chief of Staff:
-- Coordinated
-- Proactive only within defined boundaries
-- Structurally disciplined
-- Not noisy
-
----
-
-This file changes only with explicit instruction.
+See `members/README.md` for full enrollment instructions.

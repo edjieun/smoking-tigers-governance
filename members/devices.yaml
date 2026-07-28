@@ -1,0 +1,62 @@
+# STE Device Registry
+# Source of truth for all registered STE machines.
+# Each entry corresponds to one physical device with a unique Device ID (DID).
+# DID format: ste-did-NNN (zero-padded, sequential)
+#
+# To register a new device:
+#   1. Add an entry here with the next available DID
+#   2. Create members/<hostname>.yaml with your enrollment
+#   3. Create members/<github-username>.md with your user file (gitignored)
+#   4. Submit a PR
+
+devices:
+
+  - did: ste-did-001
+    hostname: eds-mac-mini
+    operator: edjieun
+    enrolled: 2026-06-22
+    tier: on-premise
+    chip: Apple M4
+    ram: 16GB
+    os: macOS
+    storage: ~
+    role: >
+      Primary on-premise server. Runs OpenClaw (Scout), Mattermost, OpenProjects,
+      LedgerSMB, LM Studio inference. Tailscale peer.
+    lm_studio:
+      enabled: true
+      port: 1234
+      network_exposed: true  # Tailscale-accessible
+    agents:
+      - Scout (OpenClaw)
+      - Maven
+      - PMP Team
+    notes: >
+      Founding reference implementation. External volume at /Volumes/edhwang/.openclaw.
+      gh CLI authenticated as edjieun. Primary governance steward machine.
+
+  - did: ste-did-002
+    hostname: eds-m4-laptop
+    operator: edjieun
+    enrolled: 2026-07-28
+    tier: on-device
+    chip: Apple M4
+    ram: 16GB
+    os: macOS
+    storage: ~
+    role: >
+      Primary on-device workstation. Interactive sessions, development, Obsidian vault,
+      VS Code + Copilot, LM Studio (personal inference only).
+    lm_studio:
+      enabled: true
+      port: 1234
+      network_exposed: false  # Loopback only — personal use
+    agents:
+      - Copilot (VS Code)
+    tools:
+      - VS Code + GitHub Copilot
+      - Obsidian (vault: this workspace)
+      - LM Studio (local inference, loopback)
+    notes: >
+      On-device tier. Discovery workspace opened via Google Drive for Desktop
+      (Google Drive path synced to local storage). Obsidian opens this folder directly.

@@ -39,6 +39,14 @@ node_modules/
 .obsidian/workspace*
 .obsidian/cache
 
+# Personal user files — machine-local only, never commit
+# Convention: members/<github-username>.md
+members/*.md
+
+# Root USER.md is now a pointer file — keep it committed (it's just a redirect)
+# If you accidentally filled out USER.md with personal data, gitignore it here:
+# USER.md
+
 # Copilot session logs (large, ephemeral — not useful in repo history)
 copilot/copilot-conversations/
 

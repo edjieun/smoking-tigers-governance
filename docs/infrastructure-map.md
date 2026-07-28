@@ -1,5 +1,5 @@
 # Infrastructure Map — Smoking Tigers / Ed's Setup
-> Last updated: 2026-03-03
+> Last updated: 2026-07-28
 
 ---
 
@@ -14,8 +14,8 @@ T-Mobile 5G Router (WAN / ISP)
     ▼
 Linksys Router (primary Wi-Fi / LAN gateway)
     │
-    ├── Mac Mini M4 (192.168.1.x — DHCP, not reserved)
-    ├── MacBook 13" M4 (192.168.1.192 — active)
+    ├── Mac Mini M4 (192.168.1.x — DHCP, not reserved)  [ste-did-001]
+    ├── MacBook M4 Laptop (192.168.1.192 — active)         [ste-did-002]
     ├── iPhone 15 Pro (Tailscale peer)
     ├── iPad 161 (192.168.1.55 — active, Tailscale peer)
     └── [other devices]
@@ -25,8 +25,8 @@ Linksys Router (primary Wi-Fi / LAN gateway)
 
 | Device | Tailscale IP | Status |
 |--------|-------------|--------|
-| Mac Mini (edlicious-server) | 100.122.103.40 | This machine |
-| MacBook Air | 100.71.214.17 | Active, direct |
+| Mac Mini (edlicious-server) [ste-did-001] | 100.122.103.40 | On-premise server |
+| M4 Laptop (eds-m4-laptop) [ste-did-002] | 100.71.214.17 | On-device workstation |
 | iPad | 100.123.110.8 | Active, direct |
 | iPhone 15 Pro | 100.126.231.111 | — |
 
@@ -38,7 +38,21 @@ Linksys Router (primary Wi-Fi / LAN gateway)
 
 ---
 
-## Services Running on Mac Mini
+## Services Running on M4 Laptop (ste-did-002)
+
+| Service | Bind Address | Port | Exposure |
+|---------|-------------|------|----------|
+| LM Studio | 127.0.0.1 | 1234 | Loopback only — personal use, not Tailscale-exposed |
+
+**Notes:**
+- Discovery workspace: Google Drive Shared Drive, synced locally via Google Drive for Desktop
+- Obsidian: opens Discovery workspace folder directly
+- Copilot: VS Code agent, on-device tier only
+- LM Studio: local inference for personal experiments — not serving other devices
+
+---
+
+## Services Running on Mac Mini (ste-did-001)
 
 | Service | Bind Address | Port | Exposure |
 |---------|-------------|------|----------|

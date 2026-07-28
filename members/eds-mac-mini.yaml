@@ -2,6 +2,7 @@
 # This is the reference implementation machine for the STE governance model.
 
 device_id: eds-mac-mini
+did: ste-did-001
 operator: edjieun
 trust_level: owner
 local_governance_path: ~/SmokingTigers/governance

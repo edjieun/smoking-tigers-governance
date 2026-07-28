@@ -7,6 +7,10 @@
 
 device_id: your-device-id-here
 
+# did: assigned Device ID from members/devices.yaml (e.g. ste-did-003)
+#   Request a DID by opening a PR to add your device to devices.yaml first.
+did: ste-did-NNN
+
 # operator: your GitHub handle
 operator: your-github-handle
 

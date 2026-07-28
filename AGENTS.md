@@ -2,7 +2,9 @@
 
 ## On Every Session Start
 1. Read SOUL.md — who you are
-2. Read USER.md — who you're helping
+2. Read `members/<github-username>.md` — who you're helping (personal user file; gitignored, machine-local)
+   - Ed's file: `members/edjieun.md`
+   - See `members/README.md` for other operators
 3. Read memory/YYYY-MM-DD.md (today + yesterday)
 4. If MAIN SESSION: also read MEMORY.md
 5. Read memory/shared.md — cross-agent summaries of what all other agents are working on
@@ -114,6 +116,47 @@ governance_repo: edjieun/smoking-tigers-governance
 governance_docs: docs/
 workspace_adrs: docs/adr/
 ```
+
+---
+
+## Workspace Layout (Discovery)
+
+This workspace is the **shared knowledge surface** for Ed, Copilot, OpenCode, and TigerClaw agents.
+
+| Path | What it is |
+|---|---|
+| `SOUL.md` | Agent identity (Chief of Staff persona) |
+| `USER.md` | About Ed — preferences, environment |
+| `TOOLS.md` | Available tools and spawn commands |
+| `MEMORY.md` | Long-running decision log (append-only) |
+| `TASKS.md` | Active task tracker (Scout-maintained) |
+| `HEARTBEAT.md` | Periodic task definitions |
+| `Memory/` | Atomic summary cards (agent-written) |
+| `Transcripts/` | Raw meeting transcripts |
+| `chunks/` | Chunked transcript segments |
+| `docs/` | Structured docs, SOPs, ADRs, archived daily notes |
+| `docs/YYYY-MM-DD.md` | Archived daily notes (moved from root after day ends) |
+| `YYYY-MM-DD.md` (root) | **Active** daily note — raw working memory, not canonical |
+| `scripts/` | Automation scripts |
+| `skills/` | Agent skill definitions |
+| `governance/` | Local governance clone (read freely, never self-approve) |
+
+Key docs to orient quickly:
+- [TigerClaw Manual](docs/tigerclaw-manual.md) — what the system is and how it works
+- [Infrastructure Map](docs/infrastructure-map.md) — hardware, ports, network
+- [Mattermost Channels](docs/mattermost-channels.md) — `#tigerclaw` is the single agent I/O channel (as of 2026-07-19)
+- [Port Map](docs/port-map.md) — all service ports
+- [AI Agent Org Chart](docs/ai-agent-org-chart.md) — agent roles and hierarchy
+
+---
+
+## Current System State (as of 2026-07-19)
+
+- **Primary agent I/O:** Mattermost `#tigerclaw` (transcripts in → tasks/decisions out)
+- **Nerve:** Deprioritized — do not build on it
+- **OpenProjects:** Active work surface — all tasks tracked as work packages
+- **ZeroClaw:** Memory backend (Mac Mini, port 42617)
+- **Scout-cos:** On-premise agent on Mac Mini via OpenClaw
 
 ---
 
