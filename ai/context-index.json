@@ -1,0 +1,8 @@
+{
+  "name": "smoking-tigers-governance",
+  "generated": "2026-08-15",
+  "contexts": [
+    {"id": "AGENT_GUIDE", "path": "ai/AGENT_GUIDE.md", "status": "draft"},
+    {"id": "SYSTEM_PROMPT", "path": "ai/system-prompt.md", "status": "draft"}
+  ]
+}

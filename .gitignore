@@ -53,3 +53,42 @@ copilot/copilot-conversations/
 # Setup secrets scripts (contain vault commands, not for public repo)
 scripts/setup-secrets.sh
 scripts/recover-credentials.md
+
+# ==========================================
+# OP#561 — Zero Private Data in Git (wiki rule)
+# ==========================================
+# Auto-generated transcript chunks
+chunks/
+
+# Session memory files (generated, not governance)
+Memory/
+
+# Obsidian plugin binaries
+.obsidian/plugins/
+
+# Personal user files (gitignored by design)
+USER.md
+members/*.md
+!members/README.md
+!members/template.yaml
+!members/devices.yaml
+
+# Staging area — should be cleared after intake
+_incoming/*.md
+
+# Agent workspace artifacts
+Project TigersClaws*.csv
+*.csv
+
+# Environment/secrets (should already be here)
+.env
+*.env
+~/.ste-secrets/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node modules (skills/composio-integration)
+skills/composio-integration/node_modules/
+skills/composio-integration/package-lock.json
